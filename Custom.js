@@ -21,12 +21,23 @@ $("#submitProblem").click(function(){
     var data = JSON.stringify(jsonObject);
 
 
-    alert("" + data);
+   //Data alerted into Object
 
 
-    console.log(data);
+    $.ajax({
 
+        "url": 'services.php',
+        "type": 'POST',
+        "data": {"data" : data},
+        success: function(data) {
 
+            // Do something with data that came back.
+
+            alert(data);
+
+        }
+
+    });
 
 });
 
@@ -36,20 +47,13 @@ $("#submitProblem").click(function(){
 
 Data Structure:
 
- $.ajax({
+ {"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
 
- "url": 'Services.php',
- "type": 'POST',
- "data": {"points" : data},
- success: function(data) {
 
- // Do something with data that came back.
+//AJAX
 
- alert(data);
 
- }
 
- });
 */
 
 
