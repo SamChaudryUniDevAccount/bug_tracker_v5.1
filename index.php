@@ -80,9 +80,7 @@ else{
 
     </body>
 
-    <!-- JavaScript-->
-    <script src="jQuery.js"></script>
-    <script src="Custom.js"></script>
+
 
     </html>
     <?php

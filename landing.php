@@ -103,7 +103,9 @@ session_start();
     </div>
 </div>
 </body>
-
+<!-- JavaScript-->
+<script src="jQuery.js"></script>
+<script src="Custom.js"></script>
 </html>
 
 ?>
