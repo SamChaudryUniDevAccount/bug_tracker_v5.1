@@ -66,36 +66,6 @@ if (isset($_POST["data"])) {
 
 
 
-    if ($result = mysqli_query($link,$sql))
-    {
-        $count = mysqli_num_rows($result);
-        echo $count;
-
-    }
-    else{
-        echo "ERROR Something not working!";
-    }
-
-
-
-
-
-
-
-
-    if ($result = mysqli_query($link,$sql)) {
-
-        $count = mysqli_num_rows($result);
-
-        echo $count;
-
-    }
-
-    else{
-
-        echo "ERROR Something not working!";
-    }
-
 
 
 
