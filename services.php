@@ -66,7 +66,8 @@ if (isset($_POST["data"])) {
 
     if(mysqli_query($link, $sql)){
 
-        echo "Records inserted successfully.";
+
+        echo "Records inserted successfully.".true;
 
     } else{
 
