@@ -12,7 +12,7 @@ if (isset($_POST["data"])) {
 
     $data = json_decode($_POST["data"],true);
 
-    echo "Data has hit the backend".$data;
+    echo "Data has hit the backend....".$data;
 
 
     $name;
