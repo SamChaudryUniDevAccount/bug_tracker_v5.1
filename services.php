@@ -13,7 +13,7 @@ if (isset($_POST["data"])) {
     $data = json_decode($_POST["data"],true);
 
 
-    echo $data;
+   // echo $data;
 
     $name;
     $department;
@@ -53,7 +53,7 @@ if (isset($_POST["data"])) {
     }
 
     //Echo from outside the for loop
-    echo "From server...".$name.$department.$bugid.$priority.$problem;
+   // echo "From server...".$name.$department.$bugid.$priority.$problem;
 
     //Write to database and monitor response Table is called: bugs
     //Columns: Name,Department,BugID,Priority,Problem
@@ -67,7 +67,9 @@ if (isset($_POST["data"])) {
     if(mysqli_query($link, $sql)){
 
 
-        echo "Records inserted successfully.".true;
+        $isSuccesful = TRUE;
+
+        echo $isSuccesful;
 
     } else{
 
