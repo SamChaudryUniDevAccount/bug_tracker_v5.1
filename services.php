@@ -88,8 +88,7 @@ if (isset($_POST["data"])) {
 
     if(mysqli_query($link, $sql)){
 
-
-        while($r = mysql_fetch($resultFromQuery)) {
+        while($r = mysql_fetch($sql)) {
 
             $rows['currentIssues'][] = $r;
 
