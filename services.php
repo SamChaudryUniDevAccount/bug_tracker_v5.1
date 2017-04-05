@@ -58,7 +58,7 @@ if (isset($_POST["data"])) {
     //Write to database and monitor response Table is called: bugs
     //Columns: Name,Department,BugID,Priority,Problem
 
-    $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('Sam', 'IT', '123','High', 'API Not Working')";
+    $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid','$priority', '$problem')";
 
     //$result = $link->query($sql);
 
