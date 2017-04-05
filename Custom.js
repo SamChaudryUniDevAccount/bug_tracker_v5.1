@@ -21,8 +21,8 @@ $("#submitProblem").click(function(){
 
     var data = JSON.stringify(jsonObject);
 
-
-    alert(data);
+    //Date alerted from front end 5/04/2017
+   // alert(data);
 
     $.ajax({
 
