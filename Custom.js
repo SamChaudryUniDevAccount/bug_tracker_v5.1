@@ -32,7 +32,11 @@ $("#submitProblem").click(function(){
         success: function(data) {
 
 
-            alert(data);
+            if(data == true){
+
+                alert("Records have been updated with issues..Thanks. ")
+
+            }
 
 
 
