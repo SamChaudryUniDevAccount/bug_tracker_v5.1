@@ -58,7 +58,7 @@ if (isset($_POST["data"])) {
     //Write to database and monitor response Table is called: bugs
     //Columns: Name,Department,BugID,Priority,Problem
 
-    $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid',$priority, '$problem')";
+    $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('Sam', 'IT', '123','High', 'API Not Working')";
 
     //$result = $link->query($sql);
 
@@ -70,7 +70,7 @@ if (isset($_POST["data"])) {
 
     } else{
 
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        echo mysqli_error($link) . "ERROR: Could not able to execute $sql. ";
 
     }
 
