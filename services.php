@@ -71,4 +71,12 @@ if (isset($_POST["data"])) {
 
     }
 
+
+}elseif ((isset($_GET))){
+
+
+
+
+
+
 }
