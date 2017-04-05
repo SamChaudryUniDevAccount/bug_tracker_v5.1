@@ -64,7 +64,7 @@ Data Structure:
  "type": 'GET',
  success: function(data) {
 
- alert(data);
+        alert(data);
 
  }
 
