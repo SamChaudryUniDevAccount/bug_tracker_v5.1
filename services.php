@@ -53,9 +53,18 @@ if (isset($_POST["data"])) {
         //Echo from outside the for loop
         echo "From server...".$name.$department.$bugid.$priority.$problem;
 
+        //Write to database and monitor response Table is called: bugs
+        //Columns: Name,Department,BugID,Priority,Problem
 
+       $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid',$priority, '$problem')";
 
+       $result = $link->query($sql);
 
+       if($result > 0){
+
+        echo $result;
+
+      }
 
 
 

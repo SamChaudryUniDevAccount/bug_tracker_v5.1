@@ -1,7 +1,8 @@
 //Working
 $( document ).ready(function() {
 
-    //alert("JS Loaded in");
+
+
 
 });
 
@@ -21,9 +22,6 @@ $("#submitProblem").click(function(){
     var data = JSON.stringify(jsonObject);
 
 
-   //Data alerted into Object
-
-
     $.ajax({
 
         "url": 'services.php',
@@ -31,9 +29,11 @@ $("#submitProblem").click(function(){
         "data": {"data" : data},
         success: function(data) {
 
-            // Do something with data that came back.
+            if(data == true){
 
-            alert(data);
+                alert("Thanks for your update it is done..")
+
+            }
 
         }
 
@@ -43,15 +43,31 @@ $("#submitProblem").click(function(){
 
 
 
+
+
+
+$("#refresh").click(function(){
+
+
+    $.ajax({
+
+        "url": 'services.php',
+        "type": 'GET',
+        success: function(data) {
+
+            alert(data);
+
+        }
+
+    });
+
+});
+
 /*
 
 Data Structure:
 
  {"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
-
-
-//AJAX
-
 
 
 */
