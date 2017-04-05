@@ -12,8 +12,6 @@ if (isset($_POST["data"])) {
 
     $data = json_decode($_POST["data"],true);
 
-    echo $data;
-
     $name;
     $department;
     $bugid;
@@ -57,15 +55,15 @@ if (isset($_POST["data"])) {
         //Write to database and monitor response Table is called: bugs
         //Columns: Name,Department,BugID,Priority,Problem
 
-       //$sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid',$priority, '$problem')";
+       $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid',$priority, '$problem')";
 
-       //$result = $link->query($sql);
+       $result = $link->query($sql);
 
-       //if($result > 0){
+        if($result > 0){
 
-        //echo $result;
+        echo $result;
 
-      //}
+      }
 
 
 
