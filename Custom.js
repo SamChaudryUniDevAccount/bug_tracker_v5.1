@@ -31,6 +31,9 @@ $("#submitProblem").click(function(){
         "data": {"data" : data},
         success: function(data) {
 
+
+            alert(data);
+
             if(data == true){
 
                 alert("Thanks for your update it is done..")
