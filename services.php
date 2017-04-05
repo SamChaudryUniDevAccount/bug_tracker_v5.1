@@ -62,7 +62,7 @@ if (isset($_POST["data"])) {
 
     $result = $link->query($sql);
 
-    echo $result;
+    echo "Value from the result query is..".$result;
 
 
 
