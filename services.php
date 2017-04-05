@@ -60,9 +60,21 @@ if (isset($_POST["data"])) {
 
     $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid',$priority, '$problem')";
 
-    $result = $link->query($sql);
+    //$result = $link->query($sql);
 
-    echo "Value from the result query is..".$result;
+    //echo "Value from the result query is..".$result;
+
+    if(mysqli_query($link, $sql)){
+
+        echo "Records inserted successfully.";
+
+    } else{
+
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+
+    }
+
+
 
 
 
