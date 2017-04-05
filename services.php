@@ -81,6 +81,9 @@ if (isset($_POST["data"])) {
 //Second GET Service call
 }elseif ((isset($_GET))){
 
+    echo "GET statement called succesfully..";
+
+
     $sql = "SELECT * FROM bugs";
 
     //Empty array to hold results
@@ -100,7 +103,6 @@ if (isset($_POST["data"])) {
         echo mysqli_error($link) . "ERROR: Could not able to execute $sql. ";
 
     }
-
 
 
     echo json_encode($rows);
