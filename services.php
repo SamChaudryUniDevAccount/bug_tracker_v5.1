@@ -9,10 +9,13 @@ include("dbconfig.php");
 
 if (isset($_POST["data"])) {
 
+
+    echo "Hi from the backend";
+
+
     $data = json_decode($_POST["data"],true);
 
     echo $data;
-
 
     $name;
     $department;
