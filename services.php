@@ -66,7 +66,6 @@ if (isset($_POST["data"])) {
 
     if(mysqli_query($link, $sql)){
 
-
         $isSuccesful = TRUE;
 
         echo $isSuccesful;
@@ -79,28 +78,30 @@ if (isset($_POST["data"])) {
 
 
 
-
-
-
-
-
-
 //Second GET Service call
 }elseif ((isset($_GET))){
 
     $sql = "SELECT * FROM bugs";
 
-    $resultFromQuery = $link->query($sql);
-
-    //Emoty array to hold results
+    //Empty array to hold results
     $rows = array();
 
-    while($r = mysql_fetch($resultFromQuery)) {
+    if(mysqli_query($link, $sql)){
 
-        $rows['currentIssues'][] = $r;
 
+        while($r = mysql_fetch($resultFromQuery)) {
+
+            $rows['currentIssues'][] = $r;
+
+
+        }
+
+    } else{
+
+        echo mysqli_error($link) . "ERROR: Could not able to execute $sql. ";
 
     }
+
 
 
     echo json_encode($rows);
