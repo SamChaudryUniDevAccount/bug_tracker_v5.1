@@ -48,28 +48,29 @@ $("#submitProblem").click(function(){
 
 
 
-$("#refresh").click(function(){
-
-
-    $.ajax({
-
-        "url": 'services.php',
-        "type": 'GET',
-        success: function(data) {
-
-            alert(data);
-
-        }
-
-    });
-
-});
 
 /*
 
 Data Structure:
 
  {"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
+
+ $("#refresh").click(function(){
+
+
+ $.ajax({
+
+ "url": 'services.php',
+ "type": 'GET',
+ success: function(data) {
+
+ alert(data);
+
+ }
+
+ });
+
+ });
 
 
 */
