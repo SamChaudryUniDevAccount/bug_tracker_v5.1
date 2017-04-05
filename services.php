@@ -71,12 +71,24 @@ if (isset($_POST["data"])) {
 
     }
 
-
+//Second GET Service call
 }elseif ((isset($_GET))){
 
+    $sql = "SELECT * FROM bugs";
+
+    $resultFromQuery = $link->query($sql);
+
+    //Emoty array to hold results
+    $rows = array();
+
+    while($r = mysql_fetch($resultFromQuery)) {
+
+        $rows['currentIssues'][] = $r;
 
 
+    }
 
 
+    echo json_encode($rows);
 
 }
