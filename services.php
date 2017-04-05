@@ -10,12 +10,8 @@ include("dbconfig.php");
 if (isset($_POST["data"])) {
 
 
-    echo "Hi from the backend";
-
-
     $data = json_decode($_POST["data"],true);
 
-    echo $data;
 
     $name;
     $department;
@@ -55,7 +51,7 @@ if (isset($_POST["data"])) {
     }
 
     //Echo from outside the for loop
-    echo "From server...".$name.$department.$bugid.$priority.$problem;
+    //echo "From server...".$name.$department.$bugid.$priority.$problem;
 
 
     //Write to database and monitor response Table is called: bugs
