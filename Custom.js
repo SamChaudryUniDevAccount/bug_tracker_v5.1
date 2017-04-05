@@ -36,6 +36,11 @@ $("#submitProblem").click(function(){
 
                 alert("Records have been updated with issues..Thanks. ")
 
+            }else{
+
+
+                //Alternative
+
             }
 
 
