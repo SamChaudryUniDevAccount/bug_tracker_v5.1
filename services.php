@@ -12,6 +12,7 @@ if (isset($_POST["data"])) {
 
     $data = json_decode($_POST["data"],true);
 
+    echo $data;
 
     $name;
     $department;
