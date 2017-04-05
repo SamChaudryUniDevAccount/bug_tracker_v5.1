@@ -61,11 +61,11 @@ if (isset($_POST["data"])) {
 
     $result = $link->query($sql);
 
-    if($result > 0){
+    echo "Result values are...".$result;
 
-        echo $result;
 
-    }
+
+
 
 //Second GET Service call
 }elseif ((isset($_GET))){
