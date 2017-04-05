@@ -59,7 +59,29 @@ if (isset($_POST["data"])) {
 
     $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid',$priority, '$problem')";
 
-    //$result = $link->query($sql);
+    $result = $link->query($sql);
+
+    echo $result;
+
+
+
+
+    if ($result = mysqli_query($link,$sql))
+    {
+        $count = mysqli_num_rows($result);
+        echo $count;
+
+    }
+    else{
+        echo "ERROR Something not working!";
+    }
+
+
+
+
+
+
+
 
     if ($result = mysqli_query($link,$sql)) {
 
