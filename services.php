@@ -1,6 +1,10 @@
 <?php
 
 
+echo "Call from";
+
+
+
 //{"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend"}
 
 
