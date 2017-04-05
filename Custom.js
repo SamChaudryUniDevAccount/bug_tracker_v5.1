@@ -34,11 +34,7 @@ $("#submitProblem").click(function(){
 
             alert(data);
 
-            if(data == true){
 
-                alert("Thanks for your update it is done..")
-
-            }
 
         }
 
