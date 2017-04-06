@@ -14,11 +14,13 @@ if(isset($_GET['getCurrentIssues'])){
     $encode = array();
 
     while($row = mysqli_fetch_assoc($result)) {
+
         $encode[] = $row;
+
     }
 
-    echo $encode;
-
+    //Returning ARRAY
+    echo json_encode($encode);;
 
 }
 
