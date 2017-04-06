@@ -9,11 +9,15 @@ if(isset($_GET['getCurrentIssues'])){
 
     $sql= "SELECT * FROM bugs";
 
-    $result=mysqli_query($link,$sql);
+    $result = mysqli_query($link,$sql);
 
+    $encode = array();
 
+    while($row = mysqli_fetch_assoc($result)) {
+        $encode[] = $row;
+    }
 
-    echo $result;
+    echo $encode;
 
 
 }
