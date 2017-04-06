@@ -4,7 +4,24 @@ include("dbconfig.php");
 
 if(isset($_GET['getCurrentIssues'])){
 
+
     echo "Get called successful";
+
+    $sql = "SELECT * FROM bugs";
+
+    $result = mysql_query($query);
+
+    $rows = array();
+
+    while($r = mysql_fetch($result)){
+
+
+        $rows[] = array('data' => $r);
+    }
+
+// now all the rows have been fetched, it can be encoded
+    echo json_encode($rows);
+
 
 
 
@@ -12,27 +29,6 @@ if(isset($_GET['getCurrentIssues'])){
 }
 
 /*
- *   $sql = "SELECT * FROM bugs";
-
-    //Empty array to hold results
-    $rows = array();
-
-    if(mysqli_query($link, $sql)){
-
-        while($r = mysql_fetch($sql)) {
-
-            $rows['currentIssues'][] = $r;
-
-
-        }
-
-    } else{
-
-        echo mysqli_error($link) . "ERROR: Could not able to execute $sql. ";
-
-    }
-
-
-    echo json_encode($rows);
+ *
  *
  */
