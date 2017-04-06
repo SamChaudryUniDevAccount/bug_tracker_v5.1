@@ -11,16 +11,16 @@ if(isset($_GET['getCurrentIssues'])){
 
     $result = mysqli_query($link,$sql);
 
-    $encode = array();
+    $jsonData = array();
 
     while($row = mysqli_fetch_assoc($result)) {
 
-        $encode[] = $row;
+        $jsonData[] = $row;
 
     }
 
     //Returning ARRAY
-    echo json_encode($encode);;
+    echo json_encode($jsonData);;
 
 }
 
