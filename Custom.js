@@ -20,6 +20,9 @@ $("#refresh").click(function(){
             data:"getCurrentIssues",
             success: function(data){
 
+
+                alert(data);
+
                 //Uncomment below to see php function_to_call = 0 or 1
                 //alert('Server function returns...' + String(data));
 
