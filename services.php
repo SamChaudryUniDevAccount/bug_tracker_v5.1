@@ -76,10 +76,13 @@ if (isset($_POST["data"])) {
 
     }
 
+}
 
 
-//Second GET Service call
-}elseif ((isset($_GET))){
+
+
+
+if ((isset($_GET))){
 
     echo "GET statement called succesfully..";
 

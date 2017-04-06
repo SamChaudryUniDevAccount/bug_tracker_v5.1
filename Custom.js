@@ -13,17 +13,20 @@ $("#refresh").click(function(){
 
     alert("Working");
 
+
     $.ajax({
 
         "url": 'services.php',
         "type": 'GET',
+        "data": {"data" : data},
         success: function(data) {
 
-            alert(data);
+            alert("Records have been updated with issues..Thanks. ")
 
         }
 
     });
+
 
 });
 
