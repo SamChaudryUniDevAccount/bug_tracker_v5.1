@@ -14,8 +14,9 @@ if (isset($_POST["updateBugsTable"])) {
 function updateBugsTable() {
 
 
-    $data = json_decode($_POST["updateBugsTable"],true);global $link;
+    $data = json_decode($_POST["updateBugsTable"],true);
 
+    global $link;
    global $name;
    global $department;
    global $bugid;
@@ -53,17 +54,9 @@ function updateBugsTable() {
 
     }
 
-    //Echo from outside the for loop
-    // echo "From server...".$name.$department.$bugid.$priority.$problem;
-
-    //Write to database and monitor response Table is called: bugs
-    //Columns: Name,Department,BugID,Priority,Problem
 
     $sql = "INSERT INTO bugs (Name, Department, BugID, Priority,Problem) VALUES ('$name', '$department', '$bugid','$priority', '$problem')";
 
-    //$result = $link->query($sql);
-
-    //echo "Value from the result query is..".$result;
 
     if(mysqli_query($link, $sql)){
 
