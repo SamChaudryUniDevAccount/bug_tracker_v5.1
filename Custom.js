@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
 $("#refresh").click(function(){
 
-//alert("Working");
+    alert("Working");
 
     $.ajax({
 
