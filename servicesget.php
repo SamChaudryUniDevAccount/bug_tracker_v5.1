@@ -9,27 +9,16 @@ if(isset($_GET['getCurrentIssues'])){
 
     $sql= "SELECT * FROM bugs";
 
-    $result=mysql_query($sql);
+    $result=mysqli_query($link,$sql);
 
-    if ($result){
+    // Fetch all
+    mysqli_fetch_all($result,MYSQLI_ASSOC);
 
-        $i=0;
+    // Free result set
+     mysqli_free_result($result);
 
-        $return =[];
+    echo json_encode(  mysqli_free_result($result));
 
-        while($row = mysql_fetch_array($result, MYSQL_NUM)){
-
-            $rows[] = $row;
-
-        }
-
-        echo json_encode($rows);
-
-    }else{
-
-        echo "ERROR";
-
-    }
 
 }
 
