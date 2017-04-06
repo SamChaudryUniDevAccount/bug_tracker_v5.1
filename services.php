@@ -45,7 +45,9 @@ if (isset($_POST["data"])) {
 
         }elseif ($key == "Problem"){
 
-            $problem =  $value;
+            $cleanValue = str_replace("\r\n",'', $value);
+
+            $problem =  $cleanValue;
 
 
         }
