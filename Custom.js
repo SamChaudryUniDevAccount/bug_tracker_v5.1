@@ -11,9 +11,19 @@ $( document ).ready(function() {
 
 $("#refresh").click(function(){
 
-alert("Working");
+//alert("Working");
 
+    $.ajax({
 
+        "url": 'services.php',
+        "type": 'GET',
+        success: function(data) {
+
+            alert(data);
+
+        }
+
+    });
 
 });
 
@@ -25,17 +35,7 @@ alert("Working");
 
 
 /*
- $.ajax({
 
- "url": 'services.php',
- "type": 'GET',
- success: function(data) {
-
- alert(data);
-
- }
-
- });
  */
 
 
