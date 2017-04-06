@@ -2,10 +2,20 @@
 
 include("dbconfig.php");
 
+
+
 if(isset($_GET['getCurrentIssues'])){
 
 
    // echo "Get called successful";
+
+    getCurrentIssues();
+
+}
+
+function getCurrentIssues(){
+
+    global $link;
 
     $sql= "SELECT * FROM bugs";
 
@@ -20,7 +30,7 @@ if(isset($_GET['getCurrentIssues'])){
     }
 
     //Returning ARRAY
-    echo json_encode($jsonData);;
+    echo json_encode($jsonData);
+
 
 }
-
