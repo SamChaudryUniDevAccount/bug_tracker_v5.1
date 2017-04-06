@@ -11,13 +11,9 @@ if(isset($_GET['getCurrentIssues'])){
 
     $result=mysqli_query($link,$sql);
 
-    // Fetch all
-    mysqli_fetch_all($result,MYSQLI_ASSOC);
 
-    // Free result set
-     mysqli_free_result($result);
 
-    echo json_encode(  mysqli_free_result($result));
+    echo $result;
 
 
 }
