@@ -6,6 +6,39 @@ $( document ).ready(function() {
 
 });
 
+
+
+
+$("#refresh").click(function(){
+
+alert("Working");
+
+
+
+});
+
+
+
+
+
+
+
+
+/*
+ $.ajax({
+
+ "url": 'services.php',
+ "type": 'GET',
+ success: function(data) {
+
+ alert(data);
+
+ }
+
+ });
+ */
+
+
 $("#submitProblem").click(function(){
 
     var jsonObject = {};
@@ -57,30 +90,14 @@ $("#submitProblem").click(function(){
 
 
 
-/*
-
-Data Structure:
-
- {"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
-
- $("#refresh").click(function(){
 
 
- $.ajax({
+//Data Structure:
 
- "url": 'services.php',
- "type": 'GET',
- success: function(data) {
-
-        alert(data);
-
- }
-
- });
-
- });
+ //{"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
 
 
-*/
+
+
 
 
