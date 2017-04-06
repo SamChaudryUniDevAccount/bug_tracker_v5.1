@@ -64,7 +64,7 @@ $("#submitProblem").click(function(){
 
         "url": 'services.php',
         "type": 'POST',
-        "data": {"data" : data},
+        "data": {"updateBugsTable" : data},
         success: function(data) {
 
 

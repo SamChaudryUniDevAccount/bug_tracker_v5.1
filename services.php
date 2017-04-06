@@ -3,17 +3,24 @@
 
 include("dbconfig.php");
 
-if (isset($_POST["data"])) {
+if (isset($_POST["updateBugsTable"])) {
 
 
-    $data = json_decode($_POST["data"],true);
+    updateBugsTable();
+
+}
 
 
-    $name;
-    $department;
-    $bugid;
-    $priority;
-    $problem;
+function updateBugsTable(){
+
+
+    $data = json_decode($_POST["updateBugsTable"],true);global $link;
+
+   global $name;
+   global $department;
+   global $bugid;
+   global $priority;
+   global $problem;
 
     foreach ($data as $key=>$value) {
 
@@ -47,7 +54,7 @@ if (isset($_POST["data"])) {
     }
 
     //Echo from outside the for loop
-   // echo "From server...".$name.$department.$bugid.$priority.$problem;
+    // echo "From server...".$name.$department.$bugid.$priority.$problem;
 
     //Write to database and monitor response Table is called: bugs
     //Columns: Name,Department,BugID,Priority,Problem
@@ -71,9 +78,6 @@ if (isset($_POST["data"])) {
     }
 
 }
-
-
-
 
 
 
