@@ -16,21 +16,12 @@ $("#refresh").click(function(){
         {
 
             type:'GET',
-            url:'test.php',
+            url:'servicesget.php',
             data:"getCurrentIssues",
             success: function(data){
 
-
                 alert(data);
 
-                //Uncomment below to see php function_to_call = 0 or 1
-                //alert('Server function returns...' + String(data));
-
-                //Uncomment below to see php function_to_call = 2
-                //var obj = JSON.stringify(data);
-
-                //Uncomment below to see php function_to_call = 2
-                //alert("Server Object as parsed JSON is: " + obj);
 
             }
 
