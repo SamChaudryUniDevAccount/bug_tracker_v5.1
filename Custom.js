@@ -16,7 +16,7 @@ $("#refresh").click(function(){
 
     $.ajax({
 
-        "url": 'services.php',
+        "url": 'servicesget.php',
         "type": 'GET',
         "data": {"data" : data},
         success: function(data) {
