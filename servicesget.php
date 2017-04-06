@@ -1,3 +1,8 @@
 <?php
 
-echo "Data from server has been called";
+if(isset($_GET['getCurrentIssues'])){
+
+
+
+
+}

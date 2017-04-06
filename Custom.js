@@ -11,21 +11,27 @@ $( document ).ready(function() {
 
 $("#refresh").click(function(){
 
-    alert("Working");
 
+    $.ajax(
+        {
 
-    $.ajax({
+            type:'GET',
+            url:'test.php',
+            data:"getCurrentIssues",
+            success: function(data){
 
-        "url": 'servicesget.php',
-        "type": 'GET',
-        "data": {"data" : data},
-        success: function(data) {
+                //Uncomment below to see php function_to_call = 0 or 1
+                //alert('Server function returns...' + String(data));
 
-            alert("Records have been updated with issues..Thanks. ")
+                //Uncomment below to see php function_to_call = 2
+                //var obj = JSON.stringify(data);
 
-        }
+                //Uncomment below to see php function_to_call = 2
+                //alert("Server Object as parsed JSON is: " + obj);
 
-    });
+            }
+
+        });
 
 
 });
