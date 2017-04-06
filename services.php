@@ -81,7 +81,7 @@ if (isset($_POST["data"])) {
 
 
 
-
+/*
 if ((isset($_GET))){
 
     echo "GET statement called succesfully..";
@@ -111,3 +111,4 @@ if ((isset($_GET))){
     echo json_encode($rows);
 
 }
+*/
