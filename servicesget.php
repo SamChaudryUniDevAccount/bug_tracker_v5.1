@@ -9,7 +9,10 @@ if(isset($_GET['getCurrentIssues'])){
 
     $sql = "SELECT * FROM bugs";
 
-    $result = mysql_query($query);
+    $result = mysql_query($sql);
+
+    echo "Result".$result;
+
 
     $rows = array();
 
