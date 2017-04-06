@@ -2,12 +2,8 @@
 
 include("dbconfig.php");
 
-
-
 if(isset($_GET['getCurrentIssues'])){
 
-
-   // echo "Get called successful";
 
     getCurrentIssues();
 
@@ -31,6 +27,5 @@ function getCurrentIssues(){
 
     //Returning ARRAY
     echo json_encode($jsonData);
-
 
 }
