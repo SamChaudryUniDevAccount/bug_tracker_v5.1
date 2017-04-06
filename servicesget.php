@@ -2,12 +2,17 @@
 
 include("dbconfig.php");
 
-
 if(isset($_GET['getCurrentIssues'])){
 
     echo "Get called successful";
 
-    $sql = "SELECT * FROM bugs";
+
+
+
+}
+
+/*
+ *   $sql = "SELECT * FROM bugs";
 
     //Empty array to hold results
     $rows = array();
@@ -29,6 +34,5 @@ if(isset($_GET['getCurrentIssues'])){
 
 
     echo json_encode($rows);
-
-
-}
+ *
+ */
