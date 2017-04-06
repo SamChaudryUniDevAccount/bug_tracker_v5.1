@@ -11,7 +11,7 @@ if (isset($_POST["updateBugsTable"])) {
 }
 
 
-function updateBugsTable(){
+function updateBugsTable() {
 
 
     $data = json_decode($_POST["updateBugsTable"],true);global $link;
@@ -67,7 +67,7 @@ function updateBugsTable(){
 
     if(mysqli_query($link, $sql)){
 
-        $isSuccesful = TRUE;
+        $isSuccesful = true;
 
         echo $isSuccesful;
 
