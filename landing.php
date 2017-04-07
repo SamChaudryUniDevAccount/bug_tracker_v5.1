@@ -66,10 +66,10 @@ session_start();
             <div class="panel-body ">
                     <table>
                         <thead>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Priority</th>
-                        <th>Problems</th>
+                        <th><span>Name</span></th>
+                        <th><span>Department</span></th>
+                        <th><span>Priority</span></th>
+                        <th><span>Problems</span>></th>
                         </thead>
                         <tbody id="issuesTable">
                         </tbody>
