@@ -33,9 +33,11 @@ $("#fileinput").change(function(evt){
 
         console.log(fileContent);
 
+        alert(fileContent);
+
     }
 
-    reader.readAsText(file.files[0]);
+    //reader.readAsText(file.files[0]);
 
 
 });
