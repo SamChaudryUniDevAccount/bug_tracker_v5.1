@@ -22,13 +22,17 @@ $("#refresh").click(function(){
 
 //problem-area
 
-$("#fileinput").click(function(evt){
+$("#fileinput").change(function(evt){
 
     var bugFile = document.getElementById('fileinput');
 
     var problemArea = document.getElementById('problem-area');
 
     var file = bugFile.files[0];
+
+    var textType = /text.*/;
+
+    if (file.type.match(textType)) {
 
         var reader = new FileReader();
 
@@ -39,6 +43,11 @@ $("#fileinput").click(function(evt){
         }
 
         reader.readAsText(file);
+
+    } else {
+
+        alert("File format invalid. Please check it and try again.")
+    }
 
 
 });
