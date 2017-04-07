@@ -22,32 +22,9 @@ $("#refresh").click(function(){
 
 //problem-area
 
-$("#fileinput").change(function(evt){
+$("#fileinput").click(function(evt){
 
-    var bugFile = document.getElementById('fileinput');
-
-    var problemArea = document.getElementById('problem-area');
-
-    var file = bugFile.files[0];
-
-    var textType = /text.*/;
-
-    if (file.type.match(textType)) {
-
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-
-            problemArea.innerText = reader.result;
-
-        }
-
-        reader.readAsText(file);
-
-    } else {
-
-        alert("File format invalid. Please check it and try again.")
-    }
+  uploadTextFile();
 
 
 });
@@ -153,7 +130,34 @@ function clearFields() {
 
 }
 
+function uploadTextFile(){
 
+    var bugFile = document.getElementById('fileinput');
+
+    var problemArea = document.getElementById('problem-area');
+
+    var file = bugFile.files[0];
+
+    var textType = /text.*/;
+
+    if (file.type.match(textType)) {
+
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+
+            problemArea.innerText = reader.result;
+
+        }
+
+        reader.readAsText(file);
+
+    } else {
+
+        alert("File format invalid. Please check it and try again.")
+    }
+
+}
 
 
 
