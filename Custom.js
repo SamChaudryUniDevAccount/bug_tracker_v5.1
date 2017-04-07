@@ -8,12 +8,23 @@ $( document ).ready(function() {
 });
 
 
+
+
 $("#refresh").click(function(){
 
 
     $('#issuesTable tr').remove();
 
      getCurrentIssuesFromDatabase();
+
+});
+
+
+//upload
+$("#upload").click(function(){
+
+
+  alert("Upload called..")
 
 });
 
