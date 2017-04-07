@@ -64,14 +64,15 @@ session_start();
                 <button id="refresh" type="button" class="btn btn-danger">Refresh</button>
             </div>
             <div class="panel-body ">
-                <tr>
-                    <th>Name</th>
-                    <th> Department</th>
-                    <th>Priority</th>
-                    <th>Problems</th>
-                </tr>
-                <div id="issuesTable">
-                </div>
+                    <table id="issuesTable">
+                        <thead>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Priority</th>
+                        <th>Problems</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
             </div>
         </div>
     </div>
