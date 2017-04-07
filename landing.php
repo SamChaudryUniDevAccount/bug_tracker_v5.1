@@ -54,10 +54,7 @@ session_start();
                 <label for="comment">Got a picture of the problem? Click the upload button to add it.</label>
 
 
-                <input id="upload" type='file' accept='text/plain'>
-                <br>
-                <div id='output'>...</div>
-
+                <input id="fileInput" type='file' accept='text/plain'>
 
                 <br>
                 <br/>

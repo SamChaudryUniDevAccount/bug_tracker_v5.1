@@ -22,24 +22,22 @@ $("#refresh").click(function(){
 
 $("#upload").change(function(){
 
-    alert("upload has been called..")
 
-    var openFile = function (event) {
-        var input = event.target;
-        var reader = new FileReader();
-        reader.onload = function () {
-            var text = reader.result;
-            var node = document.getElementById('output');
-            node.innerText = text;
+    var file = fileInput;
+    var reader = new FileReader();
 
-        };
+    reader.onload = function(e) {
 
-        reader.readAsText(input.files[0]);
+        fileContent = reader.result;
 
-    };
+        console.log(fileContent);
+
+    }
+
+    reader.readAsText(file.files[0]);
 
 
-   // $('#problem-area').html(data.replace('n',''));
+
 
 });
 
