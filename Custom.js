@@ -22,7 +22,7 @@ $("#refresh").click(function(){
 
 $("#fileinput").change(function(evt){
 
-    var fileInput = document.getElementById('fileInput');
+    var fileInput = document.getElementById('fileinput');
     var fileDisplayArea = document.getElementById('fileDisplayArea');
 
     var file = fileInput.files[0];
