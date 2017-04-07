@@ -20,36 +20,24 @@ $("#refresh").click(function(){
 });
 
 
-//upload
-$("#upload").click(function(){
+$("#upload").change(function(){
 
+    alert("upload has been called..")
 
-    //Uploading file locally..
-
-
-
-
-
-
-    /*
     var openFile = function (event) {
-
         var input = event.target;
         var reader = new FileReader();
         reader.onload = function () {
             var text = reader.result;
-
             var node = document.getElementById('output');
             node.innerText = text;
-
-            alert(node.innerText);
 
         };
 
         reader.readAsText(input.files[0]);
 
     };
- */
+
 
    // $('#problem-area').html(data.replace('n',''));
 
