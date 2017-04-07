@@ -20,10 +20,11 @@ $("#refresh").click(function(){
 });
 
 
-$("#upload").change(function(){
+$("#fileinput").change(function(){
 
 
-    var file = fileInput;
+    var file = evt.target.files[0];
+
     var reader = new FileReader();
 
     reader.onload = function(e) {
@@ -35,8 +36,6 @@ $("#upload").change(function(){
     }
 
     reader.readAsText(file.files[0]);
-
-
 
 
 });
