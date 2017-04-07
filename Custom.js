@@ -24,11 +24,12 @@ $("#refresh").click(function(){
 
 $("#fileinput").change(function(evt){
 
-    var fileInput = document.getElementById('fileinput');
+    var bugFile = document.getElementById('fileinput');
 
-    var fileDisplayArea = document.getElementById('problem-area');
+    var problemArea = document.getElementById('problem-area');
 
-    var file = fileInput.files[0];
+    var file = bugFile.files[0];
+
     var textType = /text.*/;
 
     if (file.type.match(textType)) {
@@ -37,7 +38,7 @@ $("#fileinput").change(function(evt){
 
         reader.onload = function(e) {
 
-            fileDisplayArea.innerText = reader.result;
+            problemArea.innerText = reader.result;
 
         }
 
@@ -45,7 +46,7 @@ $("#fileinput").change(function(evt){
 
     } else {
 
-        fileDisplayArea.innerText = "Check your file format !";
+        fileDisplayArea.innerText = "File format invalid..";
     }
 
 
