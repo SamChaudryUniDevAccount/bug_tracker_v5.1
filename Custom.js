@@ -26,7 +26,7 @@ $("#fileinput").change(function(evt){
 
     var fileInput = document.getElementById('fileinput');
 
-    //var fileDisplayArea = document.getElementById('fileDisplayArea');
+    var fileDisplayArea = document.getElementById('problem-area');
 
     var file = fileInput.files[0];
     var textType = /text.*/;
@@ -37,22 +37,15 @@ $("#fileinput").change(function(evt){
 
         reader.onload = function(e) {
 
-            //fileDisplayArea.innerText = reader.result;
-
-           // $("#fileinput").append(reader.text);
+            fileDisplayArea.innerText = reader.result;
 
         }
 
         reader.readAsText(file);
 
-        var userText = reader.result;
-
-        alert(userText);
-
-
     } else {
 
-        fileDisplayArea.innerText = "File not supported!";
+        fileDisplayArea.innerText = "Check your file format !";
     }
 
 
