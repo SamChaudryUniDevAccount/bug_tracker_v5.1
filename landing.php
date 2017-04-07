@@ -69,7 +69,7 @@ session_start();
                         <th><span>Name</span></th>
                         <th><span>Department</span></th>
                         <th><span>Priority</span></th>
-                        <th><span>Description of Problem</span>></th>
+                        <th><span>Description of Problem</span></th>
                         </thead>
                         <tbody id="issuesTable">
                         </tbody>

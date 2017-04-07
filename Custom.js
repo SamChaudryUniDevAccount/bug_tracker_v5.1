@@ -23,8 +23,20 @@ $("#refresh").click(function(){
 //upload
 $("#upload").click(function(){
 
+    var filePathway;
 
-  alert("Upload called..")
+    //Open modal
+
+    //Grab the file and pass it in.
+
+
+    jQuery.get('file.txt', function(data) {
+
+        alert(data);
+
+        $('#problem-area').html(data.replace('n',''));
+    });
+
 
 });
 
