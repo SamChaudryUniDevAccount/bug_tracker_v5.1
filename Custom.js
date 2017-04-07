@@ -38,10 +38,6 @@ function updateTableIssuesTable(data) {
     for (var x = 0; x < dataObjectParsed.length; x++) {
 
 
-
-        alert(x);
-
-
         tableRow = $('<tr/>');
 
         tableRow.append("<td>" + dataObjectParsed[x].Name + "</td>");
