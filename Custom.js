@@ -22,18 +22,7 @@ $("#refresh").click(function(){
 
 $("#fileinput").change(function(evt){
 
-
-    var file = evt.target.files[0];
-
-    var reader = new FileReader();
-
-    reader.onload = function(e) {
-
-        var contents = e.target.result;
-
-        alert(contents.toString());
-    }
-
+alert("file upload called./..")
 
 
 
