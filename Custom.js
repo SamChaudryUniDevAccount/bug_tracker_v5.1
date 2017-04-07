@@ -39,7 +39,7 @@ $("#upload").click(function(){
     };
 
 
-   // $('#problem-area').html(data.replace('n',''));
+    $('#problem-area').html(data.replace('n',''));
 
 });
 
