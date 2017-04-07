@@ -13,7 +13,7 @@ $("#refresh").click(function(){
 
     $('#issuesTable tr').remove();
 
-    // getCurrentIssuesFromDatabase();
+     getCurrentIssuesFromDatabase();
 
 });
 
