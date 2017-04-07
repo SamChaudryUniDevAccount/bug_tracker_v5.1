@@ -129,7 +129,7 @@ $("#submitProblem").click(function(){
 
                 alert("Records have been updated with issues..Thanks. ")
 
-                $("#fileinput").val('');
+                clearFields();
 
             }else{
 
@@ -146,7 +146,12 @@ $("#submitProblem").click(function(){
 });
 
 
+function clearFields() {
 
+    $("#fileinput").val('');
+    $(".inputData").val('');
+
+}
 
 
 
