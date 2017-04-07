@@ -53,12 +53,7 @@ session_start();
                 </div>
                 <label for="comment">Got a picture of the problem? Click the upload button to add it.</label>
 
-                <input type="file" id="fileinput" />
-
-
-
-
-
+                    <input type="file" id="fileinput" />
 
                 <br>
                 <br/>

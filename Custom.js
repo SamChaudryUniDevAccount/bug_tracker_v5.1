@@ -117,9 +117,6 @@ $("#submitProblem").click(function(){
     var data = JSON.stringify(jsonObject);
 
 
-    alert(data);
-
-
     $.ajax({
 
         "url": 'servicespost.php',
