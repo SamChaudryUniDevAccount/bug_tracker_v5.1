@@ -55,6 +55,11 @@ session_start();
 
                 <input type="file" id="fileinput" />
 
+                <div id ="test"></div>
+
+
+
+
 
                 <br>
                 <br/>
