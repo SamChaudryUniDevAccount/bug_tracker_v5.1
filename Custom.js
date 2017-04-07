@@ -2,6 +2,7 @@
 $( document ).ready(function() {
 
 
+    getCurrentIssuesFromDatabase();
 
 
 });
@@ -9,6 +10,14 @@ $( document ).ready(function() {
 
 $("#refresh").click(function(){
 
+
+ getCurrentIssuesFromDatabase();
+
+
+});
+
+
+function getCurrentIssuesFromDatabase () {
 
     $.ajax(
         {
@@ -26,7 +35,7 @@ $("#refresh").click(function(){
         });
 
 
-});
+}
 
 
 function updateTableIssuesTable(data) {
@@ -40,7 +49,7 @@ function updateTableIssuesTable(data) {
 
         tableRow = $('<tr/>');
 
-        tableRow.append("<td>   " + dataObjectParsed[x].Name + "     </td>");
+        tableRow.append("<td><span> " + dataObjectParsed[x].Name + "</span></td>");
 
         tableRow.append("<td><span>   " + dataObjectParsed[x].Department + "   </span></td>");
 
@@ -52,9 +61,6 @@ function updateTableIssuesTable(data) {
     }
 
 }
-
-
-
 
 
 
@@ -74,8 +80,6 @@ $("#submitProblem").click(function(){
 
     var data = JSON.stringify(jsonObject);
 
-    //Date alerted from front end 5/04/2017
-    alert(data);
 
     $.ajax({
 
@@ -105,14 +109,6 @@ $("#submitProblem").click(function(){
 });
 
 
-
-
-
-
-
-
-
-//Data Structure:
 
 
 
