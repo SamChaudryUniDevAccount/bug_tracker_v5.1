@@ -7,8 +7,6 @@ $( document ).ready(function() {
 });
 
 
-
-
 $("#refresh").click(function(){
 
 
@@ -20,6 +18,8 @@ $("#refresh").click(function(){
             data:"getCurrentIssues",
             success: function(data){
 
+                alert(data);
+
                 updateTableIssuesTable(data);
 
 
@@ -29,8 +29,6 @@ $("#refresh").click(function(){
 
 
 });
-
-//{"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
 
 
 function updateTableIssuesTable(data) {
