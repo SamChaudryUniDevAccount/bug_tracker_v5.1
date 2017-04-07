@@ -39,6 +39,9 @@ $("#fileinput").change(function(evt){
 
             //fileDisplayArea.innerText = reader.result;
 
+
+            alert(reader.text);
+
             $("#test").append(reader.text);
 
         }
