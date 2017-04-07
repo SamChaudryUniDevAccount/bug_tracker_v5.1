@@ -55,7 +55,7 @@ session_start();
 
                 <input type="file" id="fileinput" />
 
-
+                <div id="fileDisplayArea"></div>div>
 
 
                 <br>
