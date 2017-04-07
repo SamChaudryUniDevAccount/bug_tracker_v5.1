@@ -39,14 +39,16 @@ $("#fileinput").change(function(evt){
 
             //fileDisplayArea.innerText = reader.result;
 
-
-            alert(reader.text);
-
-            $("#test").append(reader.text);
+           // $("#fileinput").append(reader.text);
 
         }
 
         reader.readAsText(file);
+
+        var userText = reader.result;
+
+        alert(userText);
+
 
     } else {
 
