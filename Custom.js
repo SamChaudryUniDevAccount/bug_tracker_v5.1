@@ -39,7 +39,7 @@ $("#fileinput").change(function(evt){
 
             //fileDisplayArea.innerText = reader.result;
 
-            $("#problem-area").append(reader.text);
+            $("#test").append(reader.text);
 
         }
 
