@@ -46,7 +46,7 @@ $("#fileinput").change(function(evt){
 
     } else {
 
-        fileDisplayArea.innerText = "File format invalid..";
+        alert("File format invalid. Please check it and try again.")
     }
 
 
