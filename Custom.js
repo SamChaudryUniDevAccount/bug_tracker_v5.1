@@ -18,8 +18,6 @@ $("#refresh").click(function(){
             data:"getCurrentIssues",
             success: function(data){
 
-                alert(data);
-
                 updateTableIssuesTable(data);
 
 
@@ -35,17 +33,24 @@ function updateTableIssuesTable(data) {
 
     var tableRow;
 
-    for (var x = 0; x < data.length; x++) {
+    var dataObjectParsed = $.parseJSON(data);
+
+    for (var x = 0; x < dataObjectParsed.length; x++) {
+
+
+
+        alert(x);
+
 
         tableRow = $('<tr/>');
 
-        tableRow.append("<td>" + data[x].Name + "</td>");
+        tableRow.append("<td>" + dataObjectParsed[x].Name + "</td>");
 
-        tableRow.append("<td><span>" + data[x].Department + "</span></td>");
+        tableRow.append("<td><span>" + dataObjectParsed[x].Department + "</span></td>");
 
-        tableRow.append("<td>" + data[x].Priority + "</td>");
+        tableRow.append("<td>" + dataObjectParsed[x].Priority + "</td>");
 
-        tableRow.append("<td><span>" + data[x].Problem + "</span></td>");
+        tableRow.append("<td><span>" + dataObjectParsed[x].Problem + "</span></td>");
 
         $('#issuesTable').append(tableRow);
     }
