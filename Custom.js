@@ -30,10 +30,6 @@ $("#fileinput").click(function(evt){
 
     var file = bugFile.files[0];
 
-    var textType = /text.*/;
-
-    if (file.type.match(textType)) {
-
         var reader = new FileReader();
 
         reader.onload = function(e) {
@@ -43,11 +39,6 @@ $("#fileinput").click(function(evt){
         }
 
         reader.readAsText(file);
-
-    } else {
-
-        alert("File format invalid. Please check it and try again.")
-    }
 
 
 });
