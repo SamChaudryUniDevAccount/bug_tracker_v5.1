@@ -29,7 +29,7 @@ $("#upload").click(function(){
         var reader = new FileReader();
         reader.onload = function () {
             var text = reader.result;
-            var node = document.getElementById('problem-area');
+            var node = document.getElementById('output');
             node.innerText = text;
 
         };
