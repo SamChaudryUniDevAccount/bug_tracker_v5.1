@@ -30,7 +30,10 @@ $("#upload").click(function(){
         reader.onload = function () {
             var text = reader.result;
 
-                alert(text);
+            var node = document.getElementById('output');
+            node.innerText = text;
+
+            alert(node.innerText);
 
         };
 
@@ -39,7 +42,7 @@ $("#upload").click(function(){
     };
 
 
-    $('#problem-area').html(data.replace('n',''));
+   // $('#problem-area').html(data.replace('n',''));
 
 });
 
