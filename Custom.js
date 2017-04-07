@@ -20,20 +20,26 @@ $("#refresh").click(function(){
 });
 
 
+//problem-area
+
 $("#fileinput").change(function(evt){
 
     var fileInput = document.getElementById('fileinput');
-    var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+    //var fileDisplayArea = document.getElementById('fileDisplayArea');
 
     var file = fileInput.files[0];
     var textType = /text.*/;
 
     if (file.type.match(textType)) {
+
         var reader = new FileReader();
 
         reader.onload = function(e) {
 
-            fileDisplayArea.innerText = reader.result;
+            //fileDisplayArea.innerText = reader.result;
+
+            $("#fileinput").append(reader.text);
 
         }
 

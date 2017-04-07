@@ -47,15 +47,13 @@ session_start();
                 <div class="form-group">
                     <label for="comment">State your problem</label>
                     <textarea id="problem-area" name ="Problem"class="form-control inputData" rows="10" id="problem" >
-                            JSON API not working please check and amend
+
 
                         </textarea>
                 </div>
                 <label for="comment">Got a picture of the problem? Click the upload button to add it.</label>
 
                 <input type="file" id="fileinput" />
-
-                <div id="fileDisplayArea"></div>div>
 
 
                 <br>
