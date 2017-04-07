@@ -39,14 +39,13 @@ function updateTableIssuesTable(data) {
 
         tableRow = $('<tr/>');
 
-        tableRow.append("<td>" + data[i].Name + "</td>");
+        tableRow.append("<td>" + data[x].Name + "</td>");
 
-        tableRow.append("<td><span>" + data[i].Department + "</span></td>");
+        tableRow.append("<td><span>" + data[x].Department + "</span></td>");
 
-        tableRow.append("<td>" + data[i].Priority + "</td>");
+        tableRow.append("<td>" + data[x].Priority + "</td>");
 
-        tableRow.append("<td><span>" + data[i].Problem + "</span></td>");
-
+        tableRow.append("<td><span>" + data[x].Problem + "</span></td>");
 
         $('#issuesTable').append(tableRow);
     }
