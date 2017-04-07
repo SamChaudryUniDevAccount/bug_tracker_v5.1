@@ -59,7 +59,13 @@ session_start();
 
                 <input type='file' accept='text/plain' onchange='openFile(event)'>
                 <br>
-                <div id='output'>...</div>
+                <div id='output'>
+
+
+
+
+
+                </div>
 
                 <br/>
                 <br/>
