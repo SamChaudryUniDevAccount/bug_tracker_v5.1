@@ -129,6 +129,8 @@ $("#submitProblem").click(function(){
 
                 alert("Records have been updated with issues..Thanks. ")
 
+                $("#fileinput").val('');
+
             }else{
 
                 alert("System error this is not working. ")
