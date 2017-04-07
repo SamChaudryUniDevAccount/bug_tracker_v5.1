@@ -29,15 +29,12 @@ $("#fileinput").change(function(evt){
 
     reader.onload = function(e) {
 
-        fileContent = reader.result;
+        var contents = e.target.result;
 
-        console.log(fileContent);
-
-        alert(fileContent);
-
+        alert(contents.toString());
     }
 
-    //reader.readAsText(file.files[0]);
+
 
 
 });
