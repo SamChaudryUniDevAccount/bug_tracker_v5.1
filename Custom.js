@@ -40,13 +40,13 @@ function updateTableIssuesTable(data) {
 
         tableRow = $('<tr/>');
 
-        tableRow.append("<td>" + dataObjectParsed[x].Name + "</td>");
+        tableRow.append("<td>   " + dataObjectParsed[x].Name + "     </td>");
 
-        tableRow.append("<td><span>" + dataObjectParsed[x].Department + "</span></td>");
+        tableRow.append("<td><span>   " + dataObjectParsed[x].Department + "   </span></td>");
 
-        tableRow.append("<td>" + dataObjectParsed[x].Priority + "</td>");
+        tableRow.append("<td><span>" + dataObjectParsed[x].Priority + "  </span></td>");
 
-        tableRow.append("<td><span>" + dataObjectParsed[x].Problem + "</span></td>");
+        tableRow.append("<td><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
 
         $('#issuesTable').append(tableRow);
     }

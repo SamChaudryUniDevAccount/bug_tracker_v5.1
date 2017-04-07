@@ -65,7 +65,12 @@ session_start();
             </div>
             <div class="panel-body ">
                 <div id="issuesTable">
-
+                    <tr>
+                        <th>Name</th>
+                        <th> Department</th>
+                        <th>Priority</th>
+                        <th>Problems</th>
+                    </tr>
                 </div>
             </div>
         </div>
