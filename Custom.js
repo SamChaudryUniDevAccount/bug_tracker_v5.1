@@ -29,8 +29,8 @@ $("#upload").click(function(){
         var reader = new FileReader();
         reader.onload = function () {
             var text = reader.result;
-            var node = document.getElementById('output');
-            node.innerText = text;
+
+                alert(text);
 
         };
 

@@ -56,17 +56,9 @@ session_start();
 
                 <button id="upload" type="button" class="btn btn-success">Upload</button>
 
-
                 <input type='file' accept='text/plain' onchange='openFile(event)'>
+
                 <br>
-                <div id='output'>
-
-
-
-
-
-                </div>
-
                 <br/>
                 <br/>
                 <button id="submitProblem" type="submit" class="btn btn-default btn-lg  btn-block">Submit issue</button>
