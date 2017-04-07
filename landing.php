@@ -64,40 +64,9 @@ session_start();
                 <button id="refresh" type="button" class="btn btn-danger">Refresh</button>
             </div>
             <div class="panel-body ">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Bug Id</th>
-                        <th>Priority</th>
-                        <th>Issues</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>IT</td>
-                        <td>1</td>
-                        <td>high</td>
-                        <td>Not Parsing JSON data</td>
-                    </tr>
-                    <tr>
-                        <td>John</td>
-                        <td>IT</td>
-                        <td>1</td>
-                        <td>high</td>
-                        <td>Not Parsing JSON data</td>
-                    </tr>
-                    <tr>
-                        <td>John</td>
-                        <td>IT</td>
-                        <td>1</td>
-                        <td>high</td>
-                        <td>Not Parsing JSON data</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div id="issuesTable">
+
+                </div>
             </div>
         </div>
     </div>

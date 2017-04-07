@@ -20,7 +20,7 @@ $("#refresh").click(function(){
             data:"getCurrentIssues",
             success: function(data){
 
-                alert(data);
+                updateTableIssuesTable(data);
 
 
             }
@@ -31,15 +31,17 @@ $("#refresh").click(function(){
 });
 
 
+//table table-bordered issuesTable
+function updateTableIssuesTable(data) {
+
+    alert(data);
+
+}
 
 
 
 
 
-
-/*
-
- */
 
 
 $("#submitProblem").click(function(){
