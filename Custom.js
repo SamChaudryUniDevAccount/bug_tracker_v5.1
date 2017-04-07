@@ -23,6 +23,15 @@ $("#refresh").click(function(){
 //upload
 $("#upload").click(function(){
 
+
+    //Uploading file locally..
+
+
+
+
+
+
+    /*
     var openFile = function (event) {
 
         var input = event.target;
@@ -40,7 +49,7 @@ $("#upload").click(function(){
         reader.readAsText(input.files[0]);
 
     };
-
+ */
 
    // $('#problem-area').html(data.replace('n',''));
 
