@@ -11,7 +11,7 @@ $( document ).ready(function() {
 $("#refresh").click(function(){
 
 
-    $('#issuesTable').children('tr').remove();
+    $('#issuesTable tr').remove();
 
     // getCurrentIssuesFromDatabase();
 
