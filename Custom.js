@@ -23,19 +23,14 @@ $("#refresh").click(function(){
 //upload
 $("#upload").click(function(){
 
-    var filePathway;
 
-    //Open modal
+    function readURL(event){
 
-    //Grab the file and pass it in.
+        var getImagePath = URL.createObjectURL(event.target.files[0]);
 
-
-    jQuery.get('file.txt', function(data) {
-
-        alert(data);
 
         $('#problem-area').html(data.replace('n',''));
-    });
+    }
 
 
 });
