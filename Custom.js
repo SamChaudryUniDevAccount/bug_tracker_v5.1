@@ -30,11 +30,28 @@ $("#refresh").click(function(){
 
 });
 
+//{"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
 
-//table table-bordered issuesTable
+
 function updateTableIssuesTable(data) {
 
-    alert(data);
+    var tableRow;
+
+    for (var x = 0; x < data.length; x++) {
+
+        tableRow = $('<tr/>');
+
+        tableRow.append("<td>" + data[i].Name + "</td>");
+
+        tableRow.append("<td><span>" + data[i].Department + "</span></td>");
+
+        tableRow.append("<td>" + data[i].Priority + "</td>");
+
+        tableRow.append("<td><span>" + data[i].Problem + "</span></td>");
+
+
+        $('#issuesTable').append(tableRow);
+    }
 
 }
 
@@ -99,7 +116,6 @@ $("#submitProblem").click(function(){
 
 //Data Structure:
 
- //{"Name":"Sam Chaudry","Department":"IT","BugID":"123","Priority":"High","Problem":" JSON API not working please check and amend\r\n\r\n                        "}
 
 
 
