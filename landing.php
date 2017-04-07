@@ -52,7 +52,13 @@ session_start();
                         </textarea>
                 </div>
                 <label for="comment">Got a picture of the problem? Click the upload button to add it.</label>
+
+
                 <button id="upload" type="button" class="btn btn-success">Upload</button>
+
+
+
+
                 <br/>
                 <br/>
                 <button id="submitProblem" type="submit" class="btn btn-default btn-lg  btn-block">Submit issue</button>

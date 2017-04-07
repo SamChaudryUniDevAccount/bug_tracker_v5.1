@@ -23,15 +23,17 @@ $("#refresh").click(function(){
 //upload
 $("#upload").click(function(){
 
+    var input = event.target;
+    var reader = new FileReader();
+    reader.onload = function () {
+        var text = reader.result;
+        var node = $('#problem-area');
+        node.innerText = text;
+    };
+    reader.readAsText(input.files[0]);
 
-    function readURL(event){
 
-        var getImagePath = URL.createObjectURL(event.target.files[0]);
-
-
-        $('#problem-area').html(data.replace('n',''));
-    }
-
+    //$('#problem-area').html(data.replace('n',''));
 
 });
 
