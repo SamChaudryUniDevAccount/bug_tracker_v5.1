@@ -95,8 +95,7 @@ $("#submitProblem").click(function(){
 
             }else{
 
-
-                //Alternative
+                alert("System error this is not working. ")
 
             }
 
