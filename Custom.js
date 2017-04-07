@@ -23,17 +23,23 @@ $("#refresh").click(function(){
 //upload
 $("#upload").click(function(){
 
-    var input = event.target;
-    var reader = new FileReader();
-    reader.onload = function () {
-        var text = reader.result;
-        var node = $('#problem-area');
-        node.innerText = text;
+    var openFile = function (event) {
+
+        var input = event.target;
+        var reader = new FileReader();
+        reader.onload = function () {
+            var text = reader.result;
+            var node = document.getElementById('problem-area');
+            node.innerText = text;
+
+        };
+
+        reader.readAsText(input.files[0]);
+
     };
-    reader.readAsText(input.files[0]);
 
 
-    //$('#problem-area').html(data.replace('n',''));
+   // $('#problem-area').html(data.replace('n',''));
 
 });
 
