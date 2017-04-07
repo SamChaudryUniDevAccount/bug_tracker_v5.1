@@ -22,7 +22,7 @@ $("#refresh").click(function(){
 
 //problem-area
 
-$("#fileinput").change(function(evt){
+$("#fileinput").click(function(evt){
 
     var bugFile = document.getElementById('fileinput');
 
