@@ -22,9 +22,9 @@ $("#refresh").click(function(){
 
 //problem-area
 
-$("#fileinput").click(function(evt){
+$("#fileinput").change(function(evt){
 
-  uploadTextFile();
+uploadTextFile();
 
 
 });
@@ -132,41 +132,30 @@ function clearFields() {
 
 function uploadTextFile(){
 
-    function handleFileSelect(e) {
+    var bugFile = document.getElementById('fileinput');
 
-        var wrapper = document.getElementById('fileinput');
+    var problemArea = document.getElementById('problem-area');
 
-        var files = e.target.files;
+    var file = bugFile.files[0];
 
-        for(var i=0; i<files.length; i++) {
+    var textType = /text.*/;
 
-            var textType = /text.*/;
+    if (file.type.match(textType)) {
 
-            if (files.type.match(textType)) {
+        var reader = new FileReader();
 
-                var reader = new FileReader();
+        reader.onload = function(e) {
 
-                reader.onload = function(e) {
-
-                    fileDisplayArea.innerText = reader.result;
-
-                }
-
-                reader.readAsText(file);
-
-            } else {
-
-                fileDisplayArea.innerText = "File not supported!";
-
-            }
-
+            problemArea.innerText = reader.result;
 
         }
 
-        document.getElementById('files').addEventListener('change', handleFileSelect, false);
-    }
+        reader.readAsText(file);
 
-    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+    } else {
+
+        alert("File format invalid. Please check it and try again.")
+    }
 
 }
 
