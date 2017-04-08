@@ -24,7 +24,7 @@ $("#refresh").click(function(){
 
 $("#fileinput").click(function(evt){
 
-  uploadTextFile(evt);
+  uploadTextFile();
 
 
 });
@@ -106,7 +106,7 @@ $("#submitProblem").click(function(){
 
                 alert("Records have been updated with issues..Thanks. ")
 
-               // clearFields();
+                clearFields();
 
             }else{
 
@@ -130,30 +130,43 @@ function clearFields() {
 
 }
 
-function uploadTextFile(evt){
+function uploadTextFile(){
 
-    var fileInput = document.getElementById('fileinput');
-    var fileDisplayArea = document.getElementById('problem-area');
+    function handleFileSelect(e) {
 
-    fileInput.addEventListener('change', function(e) {
+        var wrapper = document.getElementById('fileinput');
 
-        var file = fileInput.files[0];
-        var textType = /text.*/;
+        var files = e.target.files;
 
-        if (file.type.match(textType)) {
-            var reader = new FileReader();
+        for(var i=0; i<files.length; i++) {
 
-            reader.onload = function(e) {
-                fileDisplayArea.innerText = reader.result;
+            var textType = /text.*/;
+
+            if (files.type.match(textType)) {
+
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+
+                    fileDisplayArea.innerText = reader.result;
+
+                }
+
+                reader.readAsText(file);
+
+            } else {
+
+                fileDisplayArea.innerText = "File not supported!";
+
             }
 
-            reader.readAsText(file);
-        } else {
-            fileDisplayArea.innerText = "File not supported!";
+
         }
-    });
 
+        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+    }
 
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
 
 }
 
