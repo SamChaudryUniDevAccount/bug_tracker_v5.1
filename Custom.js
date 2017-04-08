@@ -106,8 +106,6 @@ $("#submitProblem").click(function(){
 
                 alert("Records have been updated with issues..Thanks. ")
 
-               // clearFields();
-
             }else{
 
                 alert("System error this is not working. ")
@@ -122,13 +120,6 @@ $("#submitProblem").click(function(){
 
 });
 
-
-function clearFields() {
-
-    $("#fileinput").val('');
-    $(".inputData").val('');
-
-}
 
 function uploadTextFile(){
 
