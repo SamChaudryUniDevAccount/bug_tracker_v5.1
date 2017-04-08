@@ -132,30 +132,28 @@ function clearFields() {
 
 function uploadTextFile(evt){
 
-    var bugFile = document.getElementById('fileinput');
+    var fileInput = document.getElementById('fileInput');
+    var fileDisplayArea = document.getElementById('problem-area');
 
-    var problemArea = document.getElementById('problem-area');
+    fileInput.addEventListener('change', function(e) {
 
-    var file = bugFile.files[0];
+        var file = fileInput.files[0];
+        var textType = /text.*/;
 
-    // var textType = /text.*/;
+        if (file.type.match(textType)) {
+            var reader = new FileReader();
 
-    if (file != null) {
+            reader.onload = function(e) {
+                fileDisplayArea.innerText = reader.result;
+            }
 
-        var reader = new FileReader();
-
-        reader.onload = function(e) {
-
-            problemArea.innerText = reader.result;
-
+            reader.readAsText(file);
+        } else {
+            fileDisplayArea.innerText = "File not supported!";
         }
+    });
 
-        reader.readAsText(file);
 
-    } else {
-
-        alert("File format invalid. Please check it and try again.")
-    }
 
 }
 
