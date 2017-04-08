@@ -129,9 +129,9 @@ function uploadTextFile(){
 
     var file = bugFile.files[0];
 
-    var textType = /text.*/;
+    var textTypeInFile = /text.*/;
 
-    if (file.type.match(textType)) {
+    if (file.type.match(textTypeInFile)) {
 
         var reader = new FileReader();
 
