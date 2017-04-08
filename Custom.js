@@ -148,6 +148,7 @@ function uploadTextFile(){
 
             problemArea.innerText = reader.result;
 
+            $('fileinput[type="file"]').val(null);
         }
 
         reader.readAsText(file);
