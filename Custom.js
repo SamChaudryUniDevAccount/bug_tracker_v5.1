@@ -107,7 +107,7 @@ $("#submitProblem").click(function(){
 
             }else{
 
-                alert("System error this is not working. ")
+                alert("Please check your inputs. Keep your problems to more than 150 characters. ");
 
             }
 
