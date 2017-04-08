@@ -133,16 +133,16 @@ function uploadTextFile(){
 
     if (file.type.match(textTypeInFile)) {
 
-        var reader = new FileReader();
+        var fileReader = new FileReader();
 
-        reader.onload = function(e) {
+        fileReader.onload = function(e) {
 
             problemArea.innerText = reader.result;
 
             $('fileinput[type="file"]').val(null);
         }
 
-        reader.readAsText(file);
+        fileReader.readAsText(file);
 
     } else {
 
