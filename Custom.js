@@ -24,7 +24,7 @@ $("#refresh").click(function(){
 
 $("#fileinput").click(function(evt){
 
-  uploadTextFile();
+  uploadTextFile(evt);
 
 
 });
@@ -130,7 +130,7 @@ function clearFields() {
 
 }
 
-function uploadTextFile(){
+function uploadTextFile(evt){
 
     var bugFile = document.getElementById('fileinput');
 
@@ -138,9 +138,9 @@ function uploadTextFile(){
 
     var file = bugFile.files[0];
 
-    var textType = /text.*/;
+    // var textType = /text.*/;
 
-    if (file.type.match(textType)) {
+    if (file != null) {
 
         var reader = new FileReader();
 
