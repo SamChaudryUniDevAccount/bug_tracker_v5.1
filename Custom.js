@@ -132,7 +132,7 @@ function clearFields() {
 
 function uploadTextFile(evt){
 
-    var fileInput = document.getElementById('fileInput');
+    var fileInput = document.getElementById('fileinput');
     var fileDisplayArea = document.getElementById('problem-area');
 
     fileInput.addEventListener('change', function(e) {
