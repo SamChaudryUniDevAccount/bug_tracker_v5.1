@@ -20,7 +20,6 @@ $("#refresh").click(function(){
 });
 
 
-//problem-area
 
 $("#fileinput").change(function(evt){
 
