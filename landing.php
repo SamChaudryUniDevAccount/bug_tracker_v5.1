@@ -11,6 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <title>Bug Tracker: Homepage</title>
 
+    <!-- CSS-->
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-reboot.css">
