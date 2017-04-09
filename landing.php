@@ -14,7 +14,7 @@ session_start();
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-reboot.css">
-    <link rel="stylesheet" href="bootstrap/Styles.css">
+    <link rel="stylesheet" href="Styles.css">
 
 </head>
 <body >
