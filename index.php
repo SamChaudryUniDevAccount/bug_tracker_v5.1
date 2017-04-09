@@ -8,6 +8,7 @@ error_reporting(E_ALL);
 include("dbconfig.php");
 
 session_start();
+$error;
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
