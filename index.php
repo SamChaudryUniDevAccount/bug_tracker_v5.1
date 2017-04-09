@@ -94,33 +94,6 @@ else{
                                 </div>
                             </div>
                         </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <form class="form-horizontal" action="/" method="post">
-                            <div class="container">
-                                <label class="col-sm-2 control-label labels"><b>Username</b></label>
-                                <div class="col-sm-12">
-                                    <input type="text" placeholder="Enter Username" name="username" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label labels"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="password" required>
-                                </div>
-                                <button type="submit">Login</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
