@@ -79,13 +79,13 @@ else{
                             <div class="form-group">
                                 <label  class="col-md-12 control-label labels">Username</label>
                                 <div class="col-md-12">
-                                    <input type="text" placeholder="Enter Username" name="username" required>
+                                    <input class="col-md-6" type="text" placeholder="Enter Username" name="username" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label  class="col-md-2 control-label labels">Password</label>
                                 <div class="col-md-12">
-                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                    <input class="col-md-6" type="password" placeholder="Enter Password" name="password" required>
                                 </div>
                             </div>
                             <div class="form-group">
