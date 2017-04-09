@@ -73,7 +73,7 @@ function updateTableIssuesTable(data) {
     }
 
 
-    $('#issuesCount').append("Number of issues logged in the system are: " + dataObjectParsed.length);
+    $('#issuesCount').text("Number of issues logged in the system are: " + dataObjectParsed.length);
 
 }
 
