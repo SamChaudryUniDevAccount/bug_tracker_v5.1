@@ -71,7 +71,7 @@ else{
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class = "col-sm-offset-3 headerText "id="headerText modal-title">Welcome to Bug Tracker</h3>
+                        <h3 class = "col-sm-offset-6 headerText "id="headerText modal-title">Welcome to Bug Tracker</h3>
                     </div>
                     <div class="modal-body">
 
