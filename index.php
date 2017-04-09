@@ -65,12 +65,6 @@ else{
         <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
         <link rel="stylesheet" href="bootstrap/Styles.css">
     </head>
-    <body>
-
-
-
-
-
 
 
     <form action="/" method="post">
@@ -86,17 +80,43 @@ else{
         </div>
     </form>
 
-
-
-
-
-
-
-
-
-
-
+    <!-- Body-->
+    <body class="img-responsive" id = "login">
+    <div class="container-fluid">
+        <div id="loginModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class = "headerText "id="headerText modal-title">Welcome to Bug Tracker</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label labels">Username</label>
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="username" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label labels">Password</label>
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-6">
+                                    <button id="loginButton" type="submit" class="btn btn-default btn-lg  btn-block">Log in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </body>
+
+
     </html>
     <!-- JavaScript-->
     <script src="jQuery.js"></script>
