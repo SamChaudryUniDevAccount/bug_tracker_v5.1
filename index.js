@@ -11,5 +11,7 @@ $( document ).ready(function() {
 function showLoginModal () {
 
     $('#loginModal').modal('show');
+    $('#loginModal').modal({backdrop: 'static', keyboard: false})
+
 
 }
