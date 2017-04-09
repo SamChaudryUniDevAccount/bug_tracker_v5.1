@@ -79,7 +79,8 @@ session_start();
 
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading ">
-    <hp class="panel-title">Current Issues logged</hp>
+    <p class="panel-title">Current Issues logged</p>
+       <p id="issuesCount"></p>
     <button id="refresh" type="button" class="btn btn-danger">Refresh</button>
    </div>
    <div class="panel-body ">
