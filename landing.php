@@ -83,7 +83,7 @@ session_start();
     <button id="refresh" type="button" class="btn btn-danger">Refresh</button>
    </div>
    <div class="panel-body ">
-    <table>
+    <table class="table table-bordered">
      <thead>
      <th><span>Name</span></th>
      <th><span>Department</span></th>
