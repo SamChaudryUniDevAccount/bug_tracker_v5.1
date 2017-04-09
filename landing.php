@@ -13,7 +13,9 @@ session_start();
     <title>Bug Tracker: Homepage</title>
 
     <!-- CSS-->
-
+    <link rel="stylesheet" href="bootstrap/bootstrap.css"  media="all">
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.css"  media="all">
+    <link rel="stylesheet" href="Styles.css" rel ="stylesheet" media="all">
 
 </head>
 <body >
@@ -99,11 +101,6 @@ session_start();
 
 
 </body>
-
-<link rel="stylesheet" href="bootstrap/bootstrap.css"  media="all">
-<link rel="stylesheet" href="bootstrap/bootstrap-grid.css"  media="all">
-<link rel="stylesheet" href="Styles.css" rel ="stylesheet" media="all">
-
 
 <!-- JavaScript-->
 
