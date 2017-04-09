@@ -58,7 +58,7 @@ else{
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Bug Tracker</title>
         <!-- CSS-->
         <link rel="stylesheet" href="bootstrap/bootstrap.css">
         <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
