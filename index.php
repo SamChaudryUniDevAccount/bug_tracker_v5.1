@@ -77,15 +77,15 @@ else{
 
                         <form class="form-horizontal" action="/" method="post">
                             <div class="form-group">
-                                <label  class="col-md-12 control-label labels">Username</label>
-                                <div class="col-md-12">
+                                <label  class="col-lg-12 control-label labels">Username</label>
+                                <div class="col-lg-12">
                                     <input class="col-md-6" type="text" placeholder="Enter Username" name="username" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-md-2 control-label labels">Password</label>
-                                <div class="col-md-12">
-                                    <input class="col-md-6" type="password" placeholder="Enter Password" name="password" required>
+                                <label  class="col-lg-2 control-label labels">Password</label>
+                                <div class="col-lg-12">
+                                    <input class="col-lg-6" type="password" placeholder="Enter Password" name="password" required>
                                 </div>
                             </div>
                             <div class="form-group">
