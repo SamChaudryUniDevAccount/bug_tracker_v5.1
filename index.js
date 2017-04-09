@@ -4,18 +4,17 @@
 $( document ).ready(function() {
 
 
-    $("#loginModal").modal({
-        show: true,
-        backdrop: 'static'
-    });
+ showLoginModal();
 
 
 });
 
 function showLoginModal () {
 
-    $('#loginModal').modal('show');
-    $('#loginModal').modal({backdrop: 'static', keyboard: false})
+    $("#loginModal").modal({
+        show: true,
+        backdrop: 'static'
+    });
 
 
 }
