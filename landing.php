@@ -13,8 +13,11 @@ session_start();
     <title>Bug Tracker: Homepage</title>
 
     <!-- CSS-->
+
     <link rel="stylesheet" href="bootstrap/bootstrap.css"  media="all">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css.map"  media="all">
     <link rel="stylesheet" href="bootstrap/bootstrap-grid.css"  media="all">
+    <link rel="stylesheet" href="bootstrap/bootstrap-reboot.css"  media="all">
     <link rel="stylesheet" href="Styles.css" rel ="stylesheet" media="all">
 
 
