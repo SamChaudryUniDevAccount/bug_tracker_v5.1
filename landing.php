@@ -29,8 +29,6 @@ session_start();
 
     <a href="logout.php">Log out</a>
 
-    <button type = "button" class = "btn btn-primary"> My Button </button>
-
 
     <h3 class = "headerText "id="headerText modal-title"> Bug Tracker: Homepage</h3>
     <div class="row">
