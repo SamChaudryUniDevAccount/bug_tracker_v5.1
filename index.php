@@ -74,6 +74,40 @@ else{
                         <h3 class = "headerText "id="headerText modal-title">Welcome to Bug Tracker</h3>
                     </div>
                     <div class="modal-body">
+
+                        <form class="form-horizontal" action="/" method="post">
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label labels">Username new</label>
+                                <div class="col-sm-12">
+                                    <input type="text" placeholder="Enter Username" name="username" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label labels">Password</label>
+                                <div class="col-sm-12">
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-6">
+                                    <button id="loginButton" type="submit" class="btn btn-default btn-lg  btn-block">Log in</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <form class="form-horizontal" action="/" method="post">
                             <div class="container">
                                 <label class="col-sm-2 control-label labels"><b>Username</b></label>
