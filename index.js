@@ -3,7 +3,11 @@
  */
 $( document ).ready(function() {
 
-    showLoginModal ()
+
+    $("#loginModal").modal({
+        show: true,
+        backdrop: 'static'
+    });
 
 
 });
