@@ -21,7 +21,10 @@ session_start();
 <body >
 <div class="container-fluid">
 
-
+    <div class="panel panel-success">
+        <div class="panel-heading">Panel with panel-success class</div>
+        <div class="panel-body">Panel Content</div>
+    </div>
 
     <a href="logout.php">Log out</a>
 
