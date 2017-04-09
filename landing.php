@@ -94,6 +94,17 @@ session_start();
         </div>
     </div>
 </div>
+
+
+<div class="container">
+    <h2>Panel Footer</h2>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Panel Heading</div>
+        <div class="panel-body">Panel Content</div>
+        <div class="panel-footer">Panel Footer</div>
+    </div>
+</div>
+
 </body>
 
 <!-- JavaScript-->
