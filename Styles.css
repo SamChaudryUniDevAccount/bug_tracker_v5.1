@@ -1,0 +1,47 @@
+
+#login{
+
+    background-color:white;
+    background-image: url("../Images/img.jpg") ;
+    width: 3778px;
+    height: 2519px;
+    z-index: 300;
+    background-size: cover;
+
+}
+
+.modal-backdrop {
+
+    background-color:transparent;
+
+}
+
+.headerText{
+
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2c55a7;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#loginButton{
+
+    background-color:#6e31a0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+
+
+}
+
+.labels{
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2c55a7;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom:10px;
+
+}
