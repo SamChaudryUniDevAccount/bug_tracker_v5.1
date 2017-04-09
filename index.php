@@ -77,7 +77,7 @@ else{
 
                         <form class="form-horizontal" action="/" method="post">
                             <div class="form-group">
-                                <label  class="col-sm-2 control-label labels">Username new</label>
+                                <label  class="col-sm-2 control-label labels">Username</label>
                                 <div class="col-sm-12">
                                     <input type="text" placeholder="Enter Username" name="username" required>
                                 </div>
