@@ -3,6 +3,7 @@
 include('session.php');
 session_start();
 
+
 ?>
 
 <!DOCTYPE html>
@@ -26,15 +27,6 @@ session_start();
     <a href="logout.php">Log out</a>
 
 
-    <div class = "panel panel-danger">
-        <div class = "panel-heading">
-            <h3 class = "panel-title">Panel title</h3>
-        </div>
-
-        <div class = "panel-body">
-            This is a Basic panel
-        </div>
-    </div>
 
 
     <h3 class = "headerText "id="headerText modal-title"> Bug Tracker: Homepage</h3>
@@ -116,3 +108,4 @@ session_start();
 
 </html>
 
+?>
