@@ -63,7 +63,7 @@ else{
         <!-- CSS-->
         <link rel="stylesheet" href="bootstrap/bootstrap.css">
         <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
-        <link rel="stylesheet" href="bootstrap/Styles.css">
+        <link rel="stylesheet" href="Styles.css">
     </head>
 
 
@@ -120,7 +120,7 @@ else{
     </html>
     <!-- JavaScript-->
     <script src="jQuery.js"></script>
-    <script src="index.js.js"></script>
+    <script src="index.js"></script>
     <script src="bootstrap/bootstrap.js"></script>
 
     <?php
