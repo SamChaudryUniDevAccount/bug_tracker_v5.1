@@ -54,7 +54,6 @@ else{
 
     ?>
 
-
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -65,21 +64,6 @@ else{
         <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
         <link rel="stylesheet" href="Styles.css">
     </head>
-
-
-    <form action="/" method="post">
-        <div class="imgcontainer">
-        </div>
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
-        </div>
-    </form>
-
     <!-- Body-->
     <body class="img-responsive" id = "login">
     <div class="container-fluid">
@@ -90,23 +74,16 @@ else{
                         <h3 class = "headerText "id="headerText modal-title">Welcome to Bug Tracker</h3>
                     </div>
                     <div class="modal-body">
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label  class="col-sm-2 control-label labels">Username</label>
-                                <div class="col-sm-12">
-                                    <input type="email" class="form-control" id="username" >
-                                </div>
+                        <form action="/" method="post">
+                            <div class="imgcontainer">
                             </div>
-                            <div class="form-group">
-                                <label  class="col-sm-2 control-label labels">Password</label>
-                                <div class="col-sm-12">
-                                    <input type="password" class="form-control" id="password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-6">
-                                    <button id="loginButton" type="submit" class="btn btn-default btn-lg  btn-block">Log in</button>
-                                </div>
+                            <div class="container">
+                                <label><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="username" required>
+
+                                <label><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="password" required>
+                                <button type="submit">Login</button>
                             </div>
                         </form>
                     </div>
