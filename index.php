@@ -92,6 +92,8 @@ else{
                             <div class="form-group">
                                 <div class="col-sm-offset-5 col-lg-12">
                                     <button id="loginButton" type="submit" class="btn btn-default btn-lg  btn-block">Log in</button>
+                                    <br/>
+                                    <p><?php echo $error?>></p>
                                 </div>
                             </div>
                         </form>
