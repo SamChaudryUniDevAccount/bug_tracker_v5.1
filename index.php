@@ -60,9 +60,18 @@ else{
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <!-- CSS-->
+        <link rel="stylesheet" href="bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
+        <link rel="stylesheet" href="bootstrap/Styles.css">
     </head>
     <body>
-    <h1>It's Alive!!!</h1>
+
+
+
+
+
+
 
     <form action="/" method="post">
         <div class="imgcontainer">
@@ -77,11 +86,23 @@ else{
         </div>
     </form>
 
+
+
+
+
+
+
+
+
+
+
     </body>
-
-
-
     </html>
+    <!-- JavaScript-->
+    <script src="jQuery.js"></script>
+    <script src="index.js.js"></script>
+    <script src="bootstrap/bootstrap.js"></script>
+
     <?php
 }
 ?>

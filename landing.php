@@ -10,6 +10,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Bug Tracker: Homepage</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap/Styles.css">
+
 </head>
 <body >
 <div class="container-fluid">
@@ -88,8 +93,12 @@ session_start();
     </div>
 </div>
 </body>
+
 <!-- JavaScript-->
+
 <script src="jQuery.js"></script>
 <script src="Custom.js"></script>
+<script src="bootstrap/bootstrap.js"></script>
+
 </html>
 
