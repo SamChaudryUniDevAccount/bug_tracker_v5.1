@@ -74,9 +74,7 @@ else{
                         <h3 class = "headerText "id="headerText modal-title">Welcome to Bug Tracker</h3>
                     </div>
                     <div class="modal-body">
-                        <form action="/" method="post">
-                            <div class="imgcontainer">
-                            </div>
+                        <form class="form-horizontal" action="/" method="post">
                             <div class="container">
                                 <label><b>Username</b></label>
                                 <input type="text" placeholder="Enter Username" name="username" required>
@@ -92,7 +90,6 @@ else{
         </div>
     </div>
     </body>
-
 
     </html>
     <!-- JavaScript-->
