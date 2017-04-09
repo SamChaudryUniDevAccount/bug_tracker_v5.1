@@ -17,6 +17,10 @@ session_start();
     <link rel="stylesheet" href="bootstrap/bootstrap-grid.css"  media="all">
     <link rel="stylesheet" href="Styles.css" rel ="stylesheet" media="all">
 
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
 <body >
 <div class="container-fluid">
