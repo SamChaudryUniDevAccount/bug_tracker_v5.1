@@ -91,7 +91,7 @@
 
 }
 
-.panel {
+.panel > .panel-body {
 
     border-color: #337ab7;
 
