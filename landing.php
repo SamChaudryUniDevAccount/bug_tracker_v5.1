@@ -33,8 +33,8 @@ session_start();
  <h3 id="LandingTitle"> Bug Tracker: Homepage</h3>
     <div class="row">
   <div class="panel panel-default col-lg-6">
-   <div class="panel-heading ">Fill out the form below with your issue</div>
-   <div class="panel-body ">
+   <div class=" ">Fill out the form below with your issue</div>
+   <div class=" ">
     <form class="form-horizontal">
      <div class="form-group">
       <label  class="col-sm-2 control-label labels">Name</label>
