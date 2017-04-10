@@ -23,6 +23,6 @@ if(!isset($_SESSION['login_user'])){
 
 }else{
 
-  echo "Session Manager";
+  echo "";
 
 }

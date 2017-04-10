@@ -28,7 +28,9 @@ session_start();
  <a id="logOutLink" href="logout.php">Log out</a>
 </div>
  <h3 class = "headerText "id="headerText modal-title"> Bug Tracker: Homepage</h3>
- <div class="row">
+    <br/>
+    <br/>
+    <div class="row">
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading ">Fill out the form below with your issue</div>
    <div class="panel-body ">
