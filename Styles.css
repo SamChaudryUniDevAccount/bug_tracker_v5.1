@@ -58,6 +58,7 @@
     width: 100%;
     float: left;
     position: absolute;
+    height:20px;
     left: 0;
     top: 0;
     z-index: 10;
