@@ -62,13 +62,13 @@ session_start();
      </div>
     </form>
     <div class="form-group">
-     <label for="comment">State your problem</label>
+     <label for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
      <textarea id="problem-area" name ="Problem"class="form-control inputData" rows="10" id="problem" >
                     </textarea>
     </div>
-    <label for="comment">Got a picture of the problem? Click the upload button to add it.</label>
+    <label for="comment">Already got it in a text file? Click the upload button to add it.</label>
 
-    <input type="file" id="fileinput" />
+    <input class=" btn btn-success" type="file" id="fileinput" />
 
     <br>
     <br/>
