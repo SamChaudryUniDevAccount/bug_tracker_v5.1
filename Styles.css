@@ -85,8 +85,8 @@
 }
 .panel > .panel-heading {
 
-    background-image: none;
-    background-color: red;
-    color: white;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
 
 }
