@@ -30,7 +30,7 @@ session_start();
     <br/>
     <br/>
     <br/>
- <h3 class = "headerText "id="LandingTitle modal-title"> Bug Tracker: Homepage</h3>
+ <h3 id="LandingTitle modal-title"> Bug Tracker: Homepage</h3>
     <div class="row">
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading ">Fill out the form below with your issue</div>
