@@ -25,11 +25,11 @@ session_start();
 <body >
 <div class="container-fluid">
 <div id="navBar">
- <a id="logOutLink" href="logout.php">Log out</a>
+        <a id="logOutLink" href="logout.php">Log out</a>
 </div>
+    <br/>
+    <br/>
  <h3 class = "headerText "id="headerText modal-title"> Bug Tracker: Homepage</h3>
-    <br/>
-    <br/>
     <div class="row">
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading ">Fill out the form below with your issue</div>
