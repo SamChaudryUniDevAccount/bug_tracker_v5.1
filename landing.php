@@ -67,19 +67,13 @@ session_start();
                     </textarea>
     </div>
     <label for="comment">Already got it in a text file? Click the upload button to add it.</label>
-
-    <input type="file" id="fileinput" />
-
+        <input type="file" id="fileinput" />
     <br>
     <br/>
     <br/>
     <button id="submitProblem" type="submit" class="btn btn-success btn-lg  btn-block">Submit issue</button>
    </div>
   </div>
-
-
-
-
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading ">
     <p class="panel-title">Current Issues logged</p>
