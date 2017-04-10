@@ -81,44 +81,52 @@ function updateTableIssuesTable(data) {
 
 $("#submitProblem").click(function(){
 
-    var jsonObject = {};
 
-    var inputDataArray = ($(".inputData").serializeArray());
+    if($(".inputData").text != "") {
 
-    for (var i = 0; i < inputDataArray.length; i++){
+        var jsonObject = {};
 
-        jsonObject[inputDataArray[i]['name']] = inputDataArray[i]['value'];
+        var inputDataArray = ($(".inputData").serializeArray());
 
-    }
+        for (var i = 0; i < inputDataArray.length; i++) {
 
-
-    var data = JSON.stringify(jsonObject);
-
-
-    $.ajax({
-
-        "url": 'servicespost.php',
-        "type": 'POST',
-        "data": {"updateBugsTable" : data},
-        success: function(data) {
-
-
-            if(data == true){
-
-                alert("Records have been updated with issues..Thanks. ")
-
-            }else{
-
-                alert("Please check your inputs. Keep your problems to more than 150 characters. ");
-
-            }
-
-
+            jsonObject[inputDataArray[i]['name']] = inputDataArray[i]['value'];
 
         }
 
-    });
 
+        var data = JSON.stringify(jsonObject);
+
+
+        $.ajax({
+
+            "url": 'servicespost.php',
+            "type": 'POST',
+            "data": {"updateBugsTable": data},
+            success: function (data) {
+
+
+                if (data == true) {
+
+                    alert("Records have been updated with issues..Thanks. ")
+
+                } else {
+
+                    alert("Please check your inputs. Keep your problems to more than 150 characters. ");
+
+                }
+
+
+            }
+
+        });
+
+    }else{
+
+        alert("Please ensure that all the fields are filled out.")
+
+
+    }
 });
 
 

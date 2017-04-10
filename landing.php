@@ -98,13 +98,6 @@ session_start();
  </div>
 </div>
 
-<div class="panel panel-primary">
-    <div class="panel-heading">Panel with panel-primary class</div>
-    <div class="panel-body">Panel Content</div>
-</div>
-
-
-
 </body>
 <!-- JavaScript-->
 <script src="jQuery.js"></script>
