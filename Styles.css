@@ -36,9 +36,15 @@
 
 }
 
+#LandingTitle{
 
-
-
+    font-size: 32px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6e31a0;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10%;
+}
 
 
 .labels{
