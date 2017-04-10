@@ -68,7 +68,7 @@ session_start();
     </div>
     <label for="comment">Already got it in a text file? Click the upload button to add it.</label>
 
-    <input class=" btn btn-success" type="file" id="fileinput" />
+    <input type="file" id="fileinput" />
 
     <br>
     <br/>
