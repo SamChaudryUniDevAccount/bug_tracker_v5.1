@@ -29,6 +29,7 @@ session_start();
 </div>
     <br/>
     <br/>
+    <br/>
  <h3 class = "headerText "id="headerText modal-title"> Bug Tracker: Homepage</h3>
     <div class="row">
   <div class="panel panel-default col-lg-6">
