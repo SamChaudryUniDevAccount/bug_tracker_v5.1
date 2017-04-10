@@ -24,9 +24,9 @@ session_start();
 </head>
 <body >
 <div class="container-fluid">
-
- <a href="logout.php">Log out</a>
-
+<div id="navBar">
+ <a id="logOutLink" href="logout.php">Log out</a>
+</div>
  <h3 class = "headerText "id="headerText modal-title"> Bug Tracker: Homepage</h3>
  <div class="row">
   <div class="panel panel-default col-lg-6">

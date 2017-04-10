@@ -23,8 +23,7 @@ $("#refresh").click(function(){
 
 $("#fileinput").change(function(evt){
 
-uploadTextFile();
-
+    uploadTextFile();
 
 });
 
