@@ -31,6 +31,8 @@ session_start();
     <br/>
     <br/>
  <h3 id="LandingTitle"> Bug Tracker: Homepage</h3>
+    <br/>
+    <p>Welcome to Bug Tracker. Follow the instructions below to log your issue.</p>
     <div class="row">
   <div class="panel panel-default col-lg-6">
    <div class="panel-head ">Fill out the form below with your issue</div>
@@ -66,7 +68,7 @@ session_start();
      <textarea id="problem-area" name ="Problem"class="form-control inputData" rows="10" id="problem" >
                     </textarea>
     </div>
-    <label for="comment">Already got it in a text file? Click the upload button to add it.</label>
+    <label for="comment">Already got it in a text file? Click the Choose File button to add it.</label>
         <input type="file" id="fileinput" />
     <br>
     <br/>
@@ -96,10 +98,13 @@ session_start();
  </div>
 </div>
 
+
+
+
+
+
 </body>
-
 <!-- JavaScript-->
-
 <script src="jQuery.js"></script>
 <script src="Custom.js"></script>
 <script src="bootstrap/bootstrap.js"></script>
