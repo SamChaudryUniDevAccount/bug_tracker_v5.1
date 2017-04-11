@@ -86,7 +86,8 @@
 
 #refresh{
 
-float: right;
+    float: right;
+    margin-left: 50%;
 
 }
 
