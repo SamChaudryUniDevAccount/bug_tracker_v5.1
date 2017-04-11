@@ -104,9 +104,9 @@
 .customPanelHeaderText{
 
     font-size: 18px;
-    colour:#0275d8;
     font-weight: bold;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    colour:#0275d8;
     text-align: center;
 
 }
