@@ -38,7 +38,7 @@ session_start();
     <div class="row">
 
          <div class="panel panel-default col-lg-6">
-            <div class="panel-head textStyles ">Fill out the form below with your issue</div>
+            <div class="panel-head  ">Fill out the form below with your issue</div>
     <div class="panel-body ">
         <form class="form-horizontal">
      <div class="form-group">
