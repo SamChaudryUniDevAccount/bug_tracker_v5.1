@@ -71,7 +71,7 @@ session_start();
      <textarea id="problem-area" name ="Problem"class="form-control inputData" rows="5" id="problem" >
                     </textarea>
     </div>
-    <label for="comment">Already got it in a text file? Click the Choose File button to add it.</label>
+    <label for="comment">Upload</label>
         <input type="file" id="fileinput" />
     <br>
     <br/>
