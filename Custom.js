@@ -55,18 +55,21 @@ function updateTableIssuesTable(data) {
 
     var dataObjectParsed = $.parseJSON(data);
 
+
     for (var x = 0; x < dataObjectParsed.length; x++) {
 
 
-        tableRow = $('<tr/>');
+        tableRow = $('<tr/>').css("font-family","Helvetica Neue","color" ,"#0275d8","  text-align","justify");
 
-        tableRow.append("<td class='.tableRow'><span> " + dataObjectParsed[x].Name + "</span></td>");
 
-        tableRow.append("<td class='tableRow'><span>   " + dataObjectParsed[x].Department + "   </span></td>");
 
-        tableRow.append("<td class='tableRow'><span>" + dataObjectParsed[x].Priority + "  </span></td>");
+        tableRow.append("<td ><span> " + dataObjectParsed[x].Name + "</span></td>");
 
-        tableRow.append("<td class='tableRow'><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
+        tableRow.append("<td ><span>   " + dataObjectParsed[x].Department + "   </span></td>");
+
+        tableRow.append("<td ><span>" + dataObjectParsed[x].Priority + "  </span></td>");
+
+        tableRow.append("<td><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
 
         $('#issuesTable ').append(tableRow);
 
