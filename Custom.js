@@ -59,7 +59,7 @@ function updateTableIssuesTable(data) {
     for (var x = 0; x < dataObjectParsed.length; x++) {
 
 
-        tableRow = $('<tr/>').css({"font-family":"Helvetica Neue","color" : "#0275d8","  text-align" : "justify"});
+        tableRow = $(' <tr/>');
 
 
 
@@ -71,7 +71,7 @@ function updateTableIssuesTable(data) {
 
         tableRow.append("<td><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
 
-        $('#issuesTable ').append(tableRow);
+        $('#issuesTable ').append((tableRow).css({"font-family":"Helvetica Neue","color" : "#0275d8","  text-align" : "justify"}));
 
 
     }
