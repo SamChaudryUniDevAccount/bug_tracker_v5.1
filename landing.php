@@ -36,10 +36,11 @@ session_start();
     <p class="textStyles" id="issuesCount"></p>
     <br/>
     <div class="row">
-  <div class="panel panel-default col-lg-6">
-   <div class="panel-head ">Fill out the form below with your issue</div>
-   <div class="panel-body ">
-    <form class="form-horizontal">
+
+         <div class="panel panel-default col-lg-6">
+            <div class="panel-head ">Fill out the form below with your issue</div>
+    <div class="panel-body ">
+        <form class="form-horizontal">
      <div class="form-group">
       <label  class="col-sm-2 control-label labels">Name</label>
       <div class="col-sm-12">
@@ -67,7 +68,7 @@ session_start();
     </form>
     <div class="form-group">
      <label for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
-     <textarea id="problem-area" name ="Problem"class="form-control inputData" rows="10" id="problem" >
+     <textarea id="problem-area" name ="Problem"class="form-control inputData" rows="5" id="problem" >
                     </textarea>
     </div>
     <label for="comment">Already got it in a text file? Click the Choose File button to add it.</label>
@@ -78,25 +79,27 @@ session_start();
     <button id="submitProblem" type="submit" class="btn btn-primary btn-lg  btn-block">Submit issue</button>
    </div>
   </div>
+
   <div class="panel panel-default col-lg-6">
-   <div class="panel-heading row ">
-    <p class="panel-title">Current Issues.</p>
-    <button id="refresh" type="button" class="btn btn-primary">Refresh</button>
-       <br/>
-   </div>
+       <div class="panel-heading row ">
+        <p class="panel-title">Current Issues.</p>
+        <button id="refresh" type="button" class="btn btn-primary">Refresh</button>
+           <br/>
+       </div>
    <div class="panel-body ">
-    <table class="table table-bordered">
-     <thead>
-     <th><span>Name</span></th>
-     <th><span>Department</span></th>
-     <th><span>Priority</span></th>
-     <th><span>Description of Problem</span></th>
-     </thead>
-     <tbody id="issuesTable">
-     </tbody>
-    </table>
+        <table class="table table-bordered">
+         <thead>
+         <th><span>Name</span></th>
+         <th><span>Department</span></th>
+         <th><span>Priority</span></th>
+         <th><span>Description of Problem</span></th>
+         </thead>
+         <tbody id="issuesTable">
+         </tbody>
+        </table>
    </div>
   </div>
+
  </div>
 </div>
 
