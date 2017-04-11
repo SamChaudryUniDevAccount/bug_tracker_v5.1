@@ -32,9 +32,19 @@ session_start();
     <br/>
  <h3 id="LandingTitle"> Bug Tracker: Homepage</h3>
     <br/>
+
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">أحدث المنتجات</h3>
+            </div>
+            <div class="panel-body">Panel content</div>
+        </div>
+    </div>
+
     <p class="textStyles">Welcome to Bug Tracker. Follow the instructions below to log your issue.</p>
-    <br/>
     <p class="textStyles" id="issuesCount"></p>
+    <br/>
     <div class="row">
   <div class="panel panel-default col-lg-6">
    <div class="panel-head ">Fill out the form below with your issue</div>
