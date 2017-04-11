@@ -80,7 +80,7 @@ session_start();
    <div class="panel-heading ">
     <p class="panel-title">Current Issues logged</p>
        <p id="issuesCount"></p>
-    <button id="refresh" type="button" class="btn btn-danger">Refresh</button>
+    <button id="refresh" type="button" class="btn btn-danger btn-sm">Refresh</button>
    </div>
    <div class="panel-body ">
     <table class="table table-bordered">
