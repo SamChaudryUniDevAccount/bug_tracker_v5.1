@@ -84,19 +84,6 @@ session_start();
     <button id="refresh" type="button" class="btn btn-danger btn-sm">Refresh</button>
        <br/>
    </div>
-
-      <div class="panel panel-default">
-          <div class="panel-heading panel-heading-custom">
-              <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-              Panel content
-          </div>
-      </div>
-
-
-
-
    <div class="panel-body ">
     <table class="table table-bordered">
      <thead>
@@ -112,6 +99,20 @@ session_start();
   </div>
  </div>
 </div>
+
+
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Panel Title</h3>
+
+    </div>
+    <div class="panel-body">Panel content</div>
+</div>
+
+
+
+
 
 </body>
 <!-- JavaScript-->
