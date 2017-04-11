@@ -47,7 +47,7 @@ function updateBugsTable() {
 
         }elseif ($key == "Problem"){
 
-            $problem =  $value;
+            $problem =  stripslashes($value);
 
 
         }
