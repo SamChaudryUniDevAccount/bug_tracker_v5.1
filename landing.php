@@ -85,14 +85,15 @@ session_start();
         <p id="issuesPanelStyles"class="panel-title customPanelHeaderText">Current Issues.</p>
         <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
            <br/>
+           <br/>
        </div>
    <div class="panel-body ">
         <table class="table table-bordered">
          <thead>
-         <th><span>Name</span></th>
-         <th><span>Department</span></th>
-         <th><span>Priority</span></th>
-         <th><span>Description of Problem</span></th>
+         <th><span class="columnNameStyles">Name</span></th>
+         <th><span class="columnNameStyles">Department</span></th>
+         <th><span class="columnNameStyles">Priority</span></th>
+         <th><span class="columnNameStyles" >Description of Problem</span></th>
          </thead>
          <tbody id="issuesTable">
          </tbody>
