@@ -102,3 +102,22 @@
 }
 
 
+#bugPannelStyles{
+
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #6e31a0;
+
+
+}
+
+#issuesPanelStyles{
+
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #0275d8;
+
+
+}

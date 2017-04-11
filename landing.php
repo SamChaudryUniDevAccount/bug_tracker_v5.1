@@ -38,7 +38,7 @@ session_start();
     <div class="row">
 
          <div class="panel panel-default col-lg-6">
-            <div class="panel-head  ">Fill out the form below with your issue</div>
+            <div id="bugPannelStyles" class="panel-head  ">Fill out the form below with your issue</div>
     <div class="panel-body ">
         <form class="form-horizontal">
      <div class="form-group">
@@ -82,7 +82,7 @@ session_start();
 
   <div class="panel panel-default col-lg-6">
        <div class="panel-heading row ">
-        <p class="panel-title customPanelHeaderText">Current Issues.</p>
+        <p id="issuesPanelStyles"class="panel-title customPanelHeaderText">Current Issues.</p>
         <button id="refresh" type="button" class="btn btn-primary">Refresh</button>
            <br/>
        </div>
