@@ -55,6 +55,7 @@ function updateTableIssuesTable(data) {
 
     var dataObjectParsed = $.parseJSON(data);
 
+    var issueCount = dataObjectParsed.length;
 
     for (var x = 0; x < dataObjectParsed.length; x++) {
 
@@ -77,7 +78,7 @@ function updateTableIssuesTable(data) {
     }
 
 
-    $('#issuesCount').text("Number of issues logged in the system are: " + dataObjectParsed.length);
+    $('#issuesCount').text("Number of issues logged in the system are: " + issueCount);
 
 }
 
