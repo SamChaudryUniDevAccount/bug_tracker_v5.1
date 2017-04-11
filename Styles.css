@@ -2,8 +2,8 @@
 #login{
 
     background: url("images/img.jpg");
-    width: 3778px;
-    height: 2519px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height:100%;
 }
