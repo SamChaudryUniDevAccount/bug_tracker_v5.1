@@ -58,7 +58,7 @@ function updateTableIssuesTable(data) {
     for (var x = 0; x < dataObjectParsed.length; x++) {
 
 
-        tableRow = $('<tr/>').addClass('.tableRowStyles');
+        tableRow = $('<tr/>');
 
         tableRow.append("<td><span> " + dataObjectParsed[x].Name + "</span></td>");
 
@@ -68,7 +68,7 @@ function updateTableIssuesTable(data) {
 
         tableRow.append("<td><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
 
-        $('#issuesTable').append(tableRow);
+        $('#issuesTable').append(tableRow).addClass('.tableRowStyles');
     }
 
 
