@@ -101,7 +101,12 @@
 }
 
 .panel-default > .panel-body {
-    background: red;
+
     border: 5px solid red;
 }
 
+.panel-default > .panel-heading {
+
+    border: 5px solid red;
+
+}
