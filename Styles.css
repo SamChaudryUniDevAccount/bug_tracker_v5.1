@@ -99,3 +99,11 @@
     color: #6e31a0;
 
 }
+
+
+.panel-default > .panel-heading-custom {
+
+   background-color: red;
+
+
+}
