@@ -68,7 +68,10 @@ function updateTableIssuesTable(data) {
 
         tableRow.append("<td><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
 
-        $('#issuesTable').append(tableRow).addClass('.tableRowStyles');
+        $('#issuesTable ').append(tableRow);
+
+        $('#issuesTable tr ').addClass('tableRow');
+
     }
 
 
