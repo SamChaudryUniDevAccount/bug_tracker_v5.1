@@ -101,7 +101,7 @@
 
 }
 
-p > panel-title > customPanelHeaderText{
+    p > .panel-title > .customPanelHeaderText{
 
     font-size: 18px;
     font-weight: bold;
