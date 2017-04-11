@@ -4,7 +4,7 @@
     background: url("images/img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height:auto;
+    height:100%;
 }
 
 .modal-backdrop {
