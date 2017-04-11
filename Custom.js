@@ -60,7 +60,7 @@ function updateTableIssuesTable(data) {
 
         tableRow = $('<tr/>');
 
-        tableRow.append("<td class='tableRow'><span> " + dataObjectParsed[x].Name + "</span></td>");
+        tableRow.append("<td class='.tableRow'><span> " + dataObjectParsed[x].Name + "</span></td>");
 
         tableRow.append("<td class='tableRow'><span>   " + dataObjectParsed[x].Department + "   </span></td>");
 
