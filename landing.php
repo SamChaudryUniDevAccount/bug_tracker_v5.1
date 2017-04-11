@@ -80,8 +80,7 @@ session_start();
   </div>
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading row ">
-    <p class="panel-title">Current Issues logged</p>
-
+    <p class="panel-title">Current Issues in the system are listed below with the most recent at the botom.</p>
     <button id="refresh" type="button" class="btn btn-danger btn-sm">Refresh</button>
        <br/>
    </div>
