@@ -102,6 +102,6 @@
 
 .panel-default > .panel-heading {
     background: red;
-    border: 1px solid #dddddd;
+    border: 1px solid red;
 }
 
