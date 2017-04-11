@@ -75,7 +75,7 @@ session_start();
     <br>
     <br/>
     <br/>
-    <button id="submitProblem" type="submit" class="btn btn-success btn-lg  btn-block">Submit issue</button>
+    <button id="submitProblem" type="submit" class="btn btn-primary btn-lg  btn-block">Submit issue</button>
    </div>
   </div>
   <div class="panel panel-default col-lg-6">
