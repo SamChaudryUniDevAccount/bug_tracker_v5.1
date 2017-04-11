@@ -100,8 +100,8 @@
 
 }
 
-.panel-default > .panel-heading {
+.panel-default > .panel-body {
     background: red;
-    border: 1px solid red;
+    border: 5px solid red;
 }
 
