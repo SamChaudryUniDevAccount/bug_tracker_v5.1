@@ -58,7 +58,7 @@ function updateTableIssuesTable(data) {
     for (var x = 0; x < dataObjectParsed.length; x++) {
 
 
-        tableRow = $('<tr/>');
+        tableRow = $('<tr/>').addClass('.tableRowStyles');
 
         tableRow.append("<td><span> " + dataObjectParsed[x].Name + "</span></td>");
 
