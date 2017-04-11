@@ -33,6 +33,8 @@ session_start();
  <h3 id="LandingTitle"> Bug Tracker: Homepage</h3>
     <br/>
     <p>Welcome to Bug Tracker. Follow the instructions below to log your issue.</p>
+    <br/>
+    <p id="issuesCount"></p>
     <div class="row">
   <div class="panel panel-default col-lg-6">
    <div class="panel-head ">Fill out the form below with your issue</div>
@@ -79,7 +81,7 @@ session_start();
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading row ">
     <p class="panel-title">Current Issues logged</p>
-       <p id="issuesCount"></p>
+
     <button id="refresh" type="button" class="btn btn-danger btn-sm">Refresh</button>
        <br/>
    </div>
