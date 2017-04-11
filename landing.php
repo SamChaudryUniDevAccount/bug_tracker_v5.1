@@ -32,7 +32,7 @@ session_start();
     <br/>
  <h3 id="LandingTitle"> Bug Tracker: Homepage</h3>
     <br/>
-    <p class="textStyles">Welcome to Bug Tracker. Follow the instructions below to log your issue.</p>
+    <p class="textStyles">Welcome to Bug Tracker. Follow the instructions below to log your issue or view them with the most rcent at the top of the tabel..</p>
     <p class="textStyles" id="issuesCount"></p>
     <br/>
     <div class="row">
@@ -80,7 +80,7 @@ session_start();
   </div>
   <div class="panel panel-default col-lg-6">
    <div class="panel-heading row ">
-    <p class="panel-title">Current Issues in the system are listed below with the most recent at the botom.</p>
+    <p class="panel-title">Current Issues.</p>
     <button id="refresh" type="button" class="btn btn-danger btn-sm">Refresh</button>
        <br/>
    </div>
@@ -99,20 +99,6 @@ session_start();
   </div>
  </div>
 </div>
-
-
-
-<div class="panel panel-success">
-    <div class="panel-heading">
-        <h3 class="panel-title">Panel Title</h3>
-
-    </div>
-    <div class="panel-body">Panel content</div>
-</div>
-
-
-
-
 
 </body>
 <!-- JavaScript-->
