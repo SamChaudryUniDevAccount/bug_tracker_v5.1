@@ -87,6 +87,7 @@
 
 #refresh{
 
+ 
     float: right;
     margin-left: 50%;
     margin-bottom: 5%;
@@ -100,3 +101,11 @@
 
 }
 
+.customPanelHeaderText{
+
+    font-size: 18px;;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+
+}
