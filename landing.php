@@ -83,7 +83,7 @@ session_start();
   <div class="panel panel-default col-lg-6">
        <div class="panel-heading row ">
         <p id="issuesPanelStyles"class="panel-title customPanelHeaderText">Current Issues.</p>
-        <button id="refresh" type="button" class="btn btn-primary">Refresh</button>
+        <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
            <br/>
        </div>
    <div class="panel-body ">

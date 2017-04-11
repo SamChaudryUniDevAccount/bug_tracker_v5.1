@@ -89,7 +89,7 @@
 
  
     float: right;
-    margin-left: 50%;
+    margin-left: 25%;
     margin-bottom: 5%;
 }
 
@@ -104,7 +104,7 @@
 
 #bugPannelStyles{
 
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     color: #6e31a0;
@@ -114,10 +114,11 @@
 
 #issuesPanelStyles{
 
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     color: #0275d8;
+    text-align: center;
 
 
 }
