@@ -22,6 +22,8 @@ session_start();
     <link rel="stylesheet" href="Styles.css" rel="stylesheet" media="all">
 
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="container-fluid">
@@ -40,10 +42,10 @@ session_start();
     <div class="row">
        <div class="col-lg-6">
         <div class="panel panel-default">
-            <div class="panel-body">
 
-            <div id="bugPannelStyles" class="panel-head  ">Fill out the form below with your issue</div>
-            <div class="panel-body ">
+
+            <div id="bugPannelStyles" class="panel-heading">Fill out the form below with your issue</div>
+            <div class="panel-body">
                 <form class="form-horizontal">
                     <div class="form-group">
                         <label class="col-sm-2 control-label labels">Name</label>
@@ -83,7 +85,6 @@ session_start();
                 <button id="submitProblem" type="submit" class="btn btn-primary btn-lg  btn-block">Submit issue</button>
             </div>
 
-        </div>
        </div>
        </div>
         <div class="panel panel-default col-lg-6">
