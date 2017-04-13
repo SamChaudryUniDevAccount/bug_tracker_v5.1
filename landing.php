@@ -39,25 +39,25 @@ session_start();
             <div class="panel-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label labels">Name</label>
+                        <label class="col-sm-2 c labels">Name</label>
                         <div class="col-sm-12">
                             <input type="text" name="Name" class=" inputData form-control" value="Sam Chaudry">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label labels"> Department</label>
+                        <label class="col-sm-2 labels"> Department</label>
                         <div class="col-sm-12">
                             <input type="text" name="Department" class=" inputData form-control" value="IT">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label labels"> Bug Id</label>
+                        <label class="col-sm-2  labels"> Bug Id</label>
                         <div class="col-sm-12">
                             <input type="text" name="BugID" class=" inputData form-control" value="123">
                         </div>
                     </div>
                     <div class="form-group">
-                        <p class="col-sm-2 control-label labels">Priority</p>
+                        <p class="col-sm-2  labels">Priority</p>
                         <div class="col-sm-12">
                             <input type="text" name="Priority" class=" inputData form-control" value="High">
                         </div>
