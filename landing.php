@@ -33,7 +33,8 @@ session_start();
     <p class="textStyles" id="issuesCount"></p>
     <br/>
     <div class="row">
-       <div class="col-lg-6">
+        <!-- Bugs Submission Table-->
+        <div class="col-lg-6">
         <div class="panel panel-default">
             <div id="bugPannelStyles" class="panel-heading">Fill out the form below with your issue</div>
             <div class="panel-body">
@@ -79,25 +80,26 @@ session_start();
        </div>
        </div>
 
-
-        <div class="panel panel-primary col-lg-6">
-            <div class="panel-heading">2. Current Issues. Click Refresh to see latest at the bottom.
-                <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
-            </div>
-            <div class="panel-body">Panel Content
-                <table class="table table-bordered">
-                    <thead>
-                    <th><span class="columnNameStyles">Name</span></th>
-                    <th><span class="columnNameStyles">Department</span></th>
-                    <th><span class="columnNameStyles">Priority</span></th>
-                    <th><span class="columnNameStyles">Description of Problem</span></th>
-                    </thead>
-                    <tbody id="issuesTable">
-                    </tbody>
-                </table>
+        <!-- Bugs Table-->
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">2. Current Issues. Click Refresh to see latest at the bottom.
+                    <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <th><span class="columnNameStyles">Name</span></th>
+                        <th><span class="columnNameStyles">Department</span></th>
+                        <th><span class="columnNameStyles">Priority</span></th>
+                        <th><span class="columnNameStyles">Description of Problem</span></th>
+                        </thead>
+                        <tbody id="issuesTable">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-
 
 
 
