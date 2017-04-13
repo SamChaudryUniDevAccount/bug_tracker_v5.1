@@ -78,13 +78,13 @@ session_start();
 
        </div>
        </div>
+
+
         <div class="panel panel-primary col-lg-6">
-            <div class="panel-heading ">
-                    <p id="issuesPanelStyles" class="panel-title customPanelHeaderText">Current Issues. Click refresh to see
-                    the latest.</p>
-                    <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
+            <div class="panel-heading">2. Current Issues. Click Refresh to see latest at the bottom.
+                <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
             </div>
-            <div class="panel-body ">
+            <div class="panel-body">Panel Content
                 <table class="table table-bordered">
                     <thead>
                     <th><span class="columnNameStyles">Name</span></th>
@@ -97,6 +97,17 @@ session_start();
                 </table>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
 </div>
