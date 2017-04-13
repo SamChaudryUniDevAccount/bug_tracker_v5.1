@@ -12,14 +12,8 @@ session_start();
     <meta charset="UTF-8">
     <title>Bug Tracker: Homepage</title>
 
-    <!-- CSS-->
+    <!-- CSS Removal of CSS files-->
 
-    <link rel="stylesheet" href="bootstrap/bootstrap.css" media="all">
-    <link rel="stylesheet" href="bootstrap/bootstrap.css.map" media="all">
-    <link rel="stylesheet" href="bootstrap/bootstrap-grid.css" media="all">
-    <link rel="stylesheet" href="bootstrap/bootstrap-reboot.css" media="all">
-    <link rel="stylesheet" href="bootstrap/bootstrap-theme.css">
-    <link rel="stylesheet" href="Styles.css" rel="stylesheet" media="all">
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
