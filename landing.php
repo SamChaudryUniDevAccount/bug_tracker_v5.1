@@ -38,8 +38,9 @@ session_start();
     <p class="textStyles" id="issuesCount"></p>
     <br/>
     <div class="row">
-       <div class=" panel panel-default">
-        <div class="col-lg-6">
+       <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
 
             <div id="bugPannelStyles" class="panel-head  ">Fill out the form below with your issue</div>
             <div class="panel-body ">
@@ -83,6 +84,7 @@ session_start();
             </div>
 
         </div>
+       </div>
        </div>
         <div class="panel panel-default col-lg-6">
             <div class="panel-heading row ">
