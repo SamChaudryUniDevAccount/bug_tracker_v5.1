@@ -83,8 +83,6 @@ session_start();
                 <p id="issuesPanelStyles" class="panel-title customPanelHeaderText">Current Issues. Click refresh to see
                     the latest.</p>
                 <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
-                <br/>
-                <br/>
             </div>
             <div class="panel-body ">
                 <table class="table table-bordered">
