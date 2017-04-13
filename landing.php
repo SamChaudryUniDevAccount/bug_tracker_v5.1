@@ -15,7 +15,6 @@ session_start();
     <!-- CSS-->
 
     <link rel="stylesheet" href="Styles.css" rel="stylesheet" media="all">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
@@ -35,7 +34,7 @@ session_start();
     <br/>
     <div class="row">
        <div class="col-lg-6">
-        <div class="panel panel-primary">
+        <div class="panel panel-default">
             <div id="bugPannelStyles" class="panel-heading">Fill out the form below with your issue</div>
             <div class="panel-body">
                 <form class="form-horizontal">
@@ -79,7 +78,7 @@ session_start();
 
        </div>
        </div>
-        <div class="panel panel-default col-lg-6">
+        <div class="panel panel-primary col-lg-6">
             <div class="panel-heading row ">
                 <p id="issuesPanelStyles" class="panel-title customPanelHeaderText">Current Issues. Click refresh to see
                     the latest.</p>
