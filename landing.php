@@ -79,10 +79,12 @@ session_start();
        </div>
        </div>
         <div class="panel panel-primary col-lg-6">
-            <div class="panel-heading row ">
-                <p id="issuesPanelStyles" class="panel-title customPanelHeaderText">Current Issues. Click refresh to see
+            <div class="panel-heading ">
+                <div class="row">
+                    <p id="issuesPanelStyles" class="panel-title customPanelHeaderText">Current Issues. Click refresh to see
                     the latest.</p>
-                <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
+                    <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
+                </div>div>
             </div>
             <div class="panel-body ">
                 <table class="table table-bordered">

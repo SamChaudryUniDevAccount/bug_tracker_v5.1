@@ -83,11 +83,8 @@
 
 #refresh{
 
- 
     float: right;
-    margin-left: 25%;
-    margin-bottom: 5%;
-    padding-bottom: 5px;
+
 }
 
 .textStyles{
@@ -127,3 +124,8 @@
 
 }
 
+.form-horizontal .control-label{
+
+    text-align:left;
+
+}
