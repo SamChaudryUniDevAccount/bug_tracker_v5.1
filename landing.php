@@ -84,7 +84,7 @@ session_start();
         <div class="col-lg-6">
             <div class="panel panel-primary">
                 <div class="panel-heading issuesPannel">2. Current Issues. Click Refresh to see latest at the bottom.
-                    <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
+                    <button id="refresh" type="button" class="btn btn-primary">Refresh</button>
                 </div>
                 <div class="panel-body">
                     <table class="table table-bordered">
