@@ -35,41 +35,41 @@ session_start();
     <div class="row">
         <!-- Bugs Submission Table-->
         <div class="col-lg-6">
-        <div class="panel panel-sucess">
+        <div class="panel panel-success">
             <div id="bugPannelStyles" class="panel-heading">1. Fill out the form below with your issue</div>
             <div class="panel-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label class="col-sm-2 c labels">Name</label>
+                        <label class="col-sm-2 c labelsLanding">Name</label>
                         <div class="col-sm-12">
                             <input type="text" name="Name" class=" inputData form-control" value="Sam Chaudry">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 labels"> Department</label>
+                        <label class="col-sm-2 labelsLanding"> Department</label>
                         <div class="col-sm-12">
                             <input type="text" name="Department" class=" inputData form-control" value="IT">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2  labels"> Bug Id</label>
+                        <label class="col-sm-2  labelsLanding"> Bug Id</label>
                         <div class="col-sm-12">
                             <input type="text" name="BugID" class=" inputData form-control" value="123">
                         </div>
                     </div>
                     <div class="form-group">
-                        <p class="col-sm-2  labels">Priority</p>
+                        <p class="col-sm-2  labelsLanding">Priority</p>
                         <div class="col-sm-12">
                             <input type="text" name="Priority" class=" inputData form-control" value="High">
                         </div>
                     </div>
                 </form>
                 <div class="form-group">
-                    <label class="labels" for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
+                    <label class="labelsLanding" for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
                     <textarea id="problem-area" name="Problem" class="form-control inputData" rows="5" id="problem">
                     </textarea>
                 </div>
-                <label class="#7da45c" for="comment">Got it in a text file? Upload it from the Browse button</label>
+                <label class="labelsLanding" for="comment">Got it in a text file? Upload it from the Browse button</label>
                 <input type="file" id="fileinput"/>
                 <br>
                 <br/>

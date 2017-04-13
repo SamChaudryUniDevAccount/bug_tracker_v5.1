@@ -49,10 +49,22 @@
     font-size: 20px;
     padding-bottom:10px;
     font-weight: bold;
+    color: #6e31a0;
+
+
+}
+
+.labelsLanding{
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom:10px;
+    font-weight: bold;
     color: #7da45c;
 
 
 }
+
 
 #logOutLink{
 
