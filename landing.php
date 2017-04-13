@@ -35,8 +35,8 @@ session_start();
     <div class="row">
         <!-- Bugs Submission Table-->
         <div class="col-lg-6">
-        <div class="panel panel-default">
-            <div id="bugPannelStyles" class="panel-heading">Fill out the form below with your issue</div>
+        <div class="panel panel-sucess">
+            <div id="bugPannelStyles" class="panel-heading">1. Fill out the form below with your issue</div>
             <div class="panel-body">
                 <form class="form-horizontal">
                     <div class="form-group">
@@ -65,16 +65,16 @@ session_start();
                     </div>
                 </form>
                 <div class="form-group">
-                    <label for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
+                    <label class="labels" for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
                     <textarea id="problem-area" name="Problem" class="form-control inputData" rows="5" id="problem">
                     </textarea>
                 </div>
-                <label for="comment">Upload</label>
+                <label class="#7da45c" for="comment">Got it in a text file? Upload it from the Browse button</label>
                 <input type="file" id="fileinput"/>
                 <br>
                 <br/>
                 <br/>
-                <button id="submitProblem" type="submit" class="btn btn-primary btn-lg  btn-block">Submit issue</button>
+                <button id="submitProblem" type="submit" class="btn btn-success btn-lg  btn-block">Submit issue</button>
             </div>
 
        </div>
@@ -83,7 +83,7 @@ session_start();
         <!-- Bugs Table-->
         <div class="col-lg-6">
             <div class="panel panel-primary">
-                <div class="panel-heading">2. Current Issues. Click Refresh to see latest at the bottom.
+                <div class="panel-heading issuesPannel">2. Current Issues. Click Refresh to see latest at the bottom.
                     <button id="refresh" type="button" class="btn btn-primary btn-sm">Refresh</button>
                 </div>
                 <div class="panel-body">
