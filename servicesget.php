@@ -25,7 +25,20 @@ function getCurrentIssues(){
 
     }
 
-    //Returning ARRAY
-    echo json_encode($jsonData);
+
+    if(count($jsonData) > 0){
+
+        echo json_encode($jsonData);
+
+
+    }else{
+
+        $dataFound = false;
+
+        echo $dataFound;
+
+    }
+
+
 
 }

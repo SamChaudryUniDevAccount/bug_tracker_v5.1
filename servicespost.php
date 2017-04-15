@@ -66,7 +66,12 @@ function updateBugsTable() {
 
     } else{
 
-        echo mysqli_error($link) . "SQL could not be Executed  $sql. ";
+
+        $isSuccesful = false;
+
+        echo $isSuccesful;
+
+        //echo mysqli_error($link) . "SQL could not be Executed  $sql. ";
 
     }
 
