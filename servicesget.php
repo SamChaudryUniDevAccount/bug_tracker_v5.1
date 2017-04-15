@@ -33,9 +33,9 @@ function getCurrentIssues(){
 
     }else{
 
-        $dataFound = 204;
+        $dataNotFound = 204;
 
-        echo $dataFound;
+        echo $dataNotFound;
 
     }
 
