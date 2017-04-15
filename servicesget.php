@@ -33,7 +33,7 @@ function getCurrentIssues(){
 
     }else{
 
-        $dataFound = false;
+        $dataFound = 204;
 
         echo $dataFound;
 
