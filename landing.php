@@ -96,6 +96,7 @@ session_start();
                         <th><span class="columnNameStyles">Name</span></th>
                         <th><span class="columnNameStyles">Department</span></th>
                         <th><span class="columnNameStyles">Priority</span></th>
+                        <th><span class="columnNameStyles">Bug ID</span></th>
                         <th><span class="columnNameStyles">Description of Problem</span></th>
                         </thead>
                         <tbody id="issuesTable">
