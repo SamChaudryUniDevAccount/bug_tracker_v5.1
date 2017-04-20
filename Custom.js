@@ -65,12 +65,15 @@ function updateTableIssuesTable(data) {
         tableRow.append("<td ><span> " + dataObjectParsed[x].Name + "</span></td>");
 
         tableRow.append("<td ><span>   " + dataObjectParsed[x].Department + "   </span></td>");
-
+        
         tableRow.append("<td ><span>" + dataObjectParsed[x].Priority + "  </span></td>");
+
+        tableRow.append("<td><span>    " + dataObjectParsed[x].BugID + "    </span></td>");
 
         tableRow.append("<td><span>    " + dataObjectParsed[x].Problem + "    </span></td>");
 
-        $('#issuesTable ').append((tableRow).css({"font-family":"Helvetica Neue","color" : "#0275d8"," text-align" : "justify"}));
+
+        $('#issuesTable ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
 
 
     }
@@ -85,10 +88,10 @@ function updateTableIssuesTable(data) {
 
 $("#submitProblem").click(function(){
 
-    var inputFields =  $(".inputData").text;
+    var inputFields =  $(".inputData").val().length;
 
 
-    if( inputFields != "") {
+    if( inputFields > 0) {
 
         var jsonObject = {};
 
