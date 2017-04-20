@@ -68,7 +68,7 @@ session_start();
                     <label class="labelsLanding" for="comment">State your problem: Keep it to 140 Characters. Thanks.</label>
                     <textarea id="problem-area" name="Problem" class="form-control inputData" rows="5" id="problem"></textarea>
                 </div>
-                <label class="labelsLanding" for="comment">Got it in a text file? Upload it from the 'Choose' button</label>
+                <label class="labelsLanding" for="comment">Got it in a text file? Upload it from the 'Choose' button.</label>
                 <input type="file" id="fileinput"/>
                 <br>
                 <br/>
