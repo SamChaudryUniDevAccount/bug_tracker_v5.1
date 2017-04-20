@@ -136,6 +136,15 @@ $("#submitProblem").click(function(){
 });
 
 
+
+
+//
+$("#importfile").click(function(){
+
+    uploadTextFile();
+
+});
+
 function uploadTextFile(){
 
     var bugFile = document.getElementById('fileinput');

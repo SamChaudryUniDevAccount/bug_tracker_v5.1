@@ -70,7 +70,10 @@ session_start();
                     </textarea>
                 </div>
                 <label class="labelsLanding" for="comment">Got it in a text file? Upload it from the Browse button</label>
+               <div = "row">
                 <input type="file" id="fileinput"/>
+                <button id="importfile" type="button" class="btn btn-warning">Warning</button>
+               </div>
                 <br>
                 <br/>
                 <br/>
