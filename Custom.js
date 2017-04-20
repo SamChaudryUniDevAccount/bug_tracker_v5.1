@@ -21,11 +21,11 @@ $("#refresh").click(function(){
 
 
 
-$("#fileinput").change(function(evt){
+//$("#fileinput").change(function(evt){
 
-    uploadTextFile();
+  //  uploadTextFile();
 
-});
+//});
 
 
 function getCurrentIssuesFromDatabase () {

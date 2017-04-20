@@ -72,7 +72,8 @@ session_start();
                 <label class="labelsLanding" for="comment">Got it in a text file? Upload it from the Browse button</label>
                <div = "row">
                 <input type="file" id="fileinput"/>
-                <button id="importfile" type="button" class="btn btn-warning">Warning</button>
+                <br/>
+                <button id="importfile" type="button" class="btn btn-warning">Upload my file</button>
                </div>
                 <br>
                 <br/>
