@@ -52,7 +52,7 @@ session_start();
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2  labelsLanding"> Bug Id</label>
+                        <label class="col-sm-2  labelsLanding"> Bug ID</label>
                         <div class="col-sm-12">
                             <input type="text" name="BugID" class=" inputData form-control" value="">
                         </div>
