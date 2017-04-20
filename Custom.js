@@ -85,10 +85,10 @@ function updateTableIssuesTable(data) {
 
 $("#submitProblem").click(function(){
 
-    var inputFields =  $(".inputData").text;
+    var inputFields =  $(".inputData").val().length;
 
 
-    if( inputFields != "") {
+    if( inputFields > 0) {
 
         var jsonObject = {};
 
