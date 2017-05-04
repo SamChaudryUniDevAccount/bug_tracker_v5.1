@@ -7,7 +7,60 @@ if(isset($_GET['getCurrentIssues'])){
 
     getCurrentIssues();
 
+
+}elseif(isset($_GET['getListOfUsers'])){
+
+
+
+    getListOfUsersLoggedIssues();
+
+
 }
+
+
+
+
+
+
+
+
+
+
+function getListOfUsersLoggedIssues(){
+
+    global $link;
+
+    $sql= "SELECT Name FROM bugs";
+
+    $result = mysqli_query($link,$sql);
+
+    $jsonData = array();
+
+    while($row = mysqli_fetch_assoc($result)) {
+
+        $jsonData[] = $row;
+
+    }
+
+
+    if(count($jsonData) > 0){
+
+        echo json_encode($jsonData);
+
+
+    }else{
+
+        $dataNotFound = 204;
+
+        echo $dataNotFound;
+
+    }
+
+
+}
+
+
+
 
 function getCurrentIssues(){
 
