@@ -48,9 +48,9 @@ if(isset($_GET['getCurrentIssues'])){
 }
 
 
-function testAPICall($test){
+function testAPICall(){
 
-    echo $test;
+    echo "hello";
 
 }
 
