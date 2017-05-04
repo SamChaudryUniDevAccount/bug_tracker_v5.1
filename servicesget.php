@@ -134,7 +134,7 @@ function getListOfUsersWhoLoggedBugs(){
 
     if(count($jsonData) > 0){
 
-        echo json_encode(($jsonData));
+        echo json_encode($jsonData);
 
 
     }else{
