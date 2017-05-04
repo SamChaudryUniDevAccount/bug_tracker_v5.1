@@ -42,15 +42,15 @@ if(isset($_GET['getCurrentIssues'])){
 }elseif(isset($_GET['testAPICall'])){
 
 
-    testAPICall();
+    testAPICall($test);
 
 
 }
 
 
-function testAPICall(){
+function testAPICall($test){
 
-    echo "hello";
+    echo "hello".$test;
 
 }
 
