@@ -39,19 +39,6 @@ if(isset($_GET['getCurrentIssues'])){
     getIssuesLoggedWithTheirIDs();
 
 
-}elseif(isset($_GET['testAPICall'])){
-
-
-    testAPICall($test);
-
-
-}
-
-
-function testAPICall($test){
-
-    echo "hello".$test;
-
 }
 
 
