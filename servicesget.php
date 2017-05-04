@@ -39,7 +39,21 @@ if(isset($_GET['getCurrentIssues'])){
     getIssuesLoggedWithTheirIDs();
 
 
+}elseif(isset($_GET['testAPI'])){
+
+
+    testAPICall();
+
+
 }
+
+
+function testAPICall($test){
+
+    echo $test;
+
+}
+
 
 
 function getIssuesLoggedWithTheirIDs(){
