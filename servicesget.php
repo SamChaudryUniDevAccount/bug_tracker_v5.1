@@ -8,7 +8,7 @@ if(isset($_GET['getCurrentIssues'])){
     getCurrentIssues();
 
 
-}elseif(isset($_GET['getListOfUsers'])){
+}elseif(isset($_GET['getListOfUsersLoggedIssues'])){
 
 
 
