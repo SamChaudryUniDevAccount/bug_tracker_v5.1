@@ -155,7 +155,7 @@ function getNumberofIssuesLogged(){
 
     global $link;
 
-    $sql= "SELECT * Department FROM bugs";
+    $sql= "SELECT *  FROM bugs";
 
     $result = mysqli_query($link,$sql);
 
