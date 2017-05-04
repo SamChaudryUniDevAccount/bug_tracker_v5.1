@@ -39,7 +39,7 @@ if(isset($_GET['getCurrentIssues'])){
     getIssuesLoggedWithTheirIDs();
 
 
-}elseif(isset($_GET['testAPI'])){
+}elseif(isset($_GET['testAPICall'])){
 
 
     testAPICall();
