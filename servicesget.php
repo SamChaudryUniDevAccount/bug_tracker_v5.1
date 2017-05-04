@@ -15,10 +15,10 @@ if(isset($_GET['getCurrentIssues'])){
     getListOfUsersLoggedIssues();
 
 
-}elseif(isset($_GET['getListOfUsersLoggedIssues'])){
+}elseif(isset($_GET['getNumberofIssuesLogged'])){
 
 
-
+    getNumberofIssuesLogged();
 
 
 }
@@ -26,6 +26,41 @@ if(isset($_GET['getCurrentIssues'])){
 
 
 
+
+
+function getNumberofIssuesLogged(){
+
+    global $link;
+
+    $sql= "SELECT * Department FROM bugs";
+
+    $result = mysqli_query($link,$sql);
+
+    $jsonData = array();
+
+    while($row = mysqli_fetch_assoc($result)) {
+
+        $jsonData[] = $row;
+
+    }
+
+
+    if(count($jsonData) > 0){
+
+        echo json_encode(count($jsonData));
+
+
+    }else{
+
+        $dataNotFound = 204;
+
+        echo $dataNotFound;
+
+    }
+
+
+
+}
 
 
 
