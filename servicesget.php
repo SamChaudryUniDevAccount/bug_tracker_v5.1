@@ -8,11 +8,11 @@ if(isset($_GET['getCurrentIssues'])){
     getCurrentIssues();
 
 
-}elseif(isset($_GET['getListOfUsersLoggedIssues'])){
+}elseif(isset($_GET['getListOfUsersLoggedIssuesWithDepartment'])){
 
 
 
-    getListOfUsersLoggedIssues();
+    getListOfUsersLoggedIssuesWithDepartment();
 
 
 }elseif(isset($_GET['getNumberofIssuesLogged'])){
@@ -21,7 +21,17 @@ if(isset($_GET['getCurrentIssues'])){
     getNumberofIssuesLogged();
 
 
+}elseif(isset($_GET['getListOfUsersLoggedIssued'])){
+
+
+
+
+
+
 }
+
+
+
 
 
 
@@ -67,7 +77,7 @@ function getNumberofIssuesLogged(){
 
 
 
-function getListOfUsersLoggedIssues(){
+function getListOfUsersLoggedIssuesWithDepartment(){
 
     global $link;
 
