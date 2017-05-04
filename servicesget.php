@@ -27,7 +27,91 @@ if(isset($_GET['getCurrentIssues'])){
     getListOfUsersWhoLoggedBugs();
 
 
+}elseif(isset($_GET['getListOfDepartmentsWithIssues'])){
+
+
+    getListOfDepartmentsWithIssues();
+
+
+}elseif(isset($_GET['getIssuesLoggedWithTheirIDs'])){
+
+
+    getIssuesLoggedWithTheirIDs();
+
+
 }
+
+
+function getIssuesLoggedWithTheirIDs(){
+
+    global $link;
+
+    $sql= "SELECT BugID, Problem FROM bugs";
+
+    $result = mysqli_query($link,$sql);
+
+    $jsonData = array();
+
+    while($row = mysqli_fetch_assoc($result)) {
+
+        $jsonData[] = $row;
+
+    }
+
+
+    if(count($jsonData) > 0){
+
+        echo json_encode(count($jsonData));
+
+
+    }else{
+
+        $dataNotFound = 204;
+
+        echo $dataNotFound;
+
+    }
+
+
+}
+
+
+
+
+function getListOfDepartmentsWithIssues(){
+
+    global $link;
+
+    $sql= "SELECT Department FROM bugs";
+
+    $result = mysqli_query($link,$sql);
+
+    $jsonData = array();
+
+    while($row = mysqli_fetch_assoc($result)) {
+
+        $jsonData[] = $row;
+
+    }
+
+
+    if(count($jsonData) > 0){
+
+        echo json_encode(count($jsonData));
+
+
+    }else{
+
+        $dataNotFound = 204;
+
+        echo $dataNotFound;
+
+    }
+
+
+
+}
+
 
 
 
@@ -86,7 +170,7 @@ function getNumberofIssuesLogged(){
 
     if(count($jsonData) > 0){
 
-        echo json_encode(count($jsonData));
+        echo count($jsonData);
 
 
     }else{
