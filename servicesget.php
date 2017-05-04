@@ -119,7 +119,7 @@ function getListOfUsersWhoLoggedBugs(){
 
     global $link;
 
-    $sql= "SELECT Name Department FROM bugs";
+    $sql= "SELECT Name FROM bugs";
 
     $result = mysqli_query($link,$sql);
 
