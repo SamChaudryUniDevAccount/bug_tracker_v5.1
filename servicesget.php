@@ -15,6 +15,12 @@ if(isset($_GET['getCurrentIssues'])){
     getListOfUsersLoggedIssues();
 
 
+}elseif(isset($_GET['getListOfUsersLoggedIssues'])){
+
+
+
+
+
 }
 
 
@@ -30,7 +36,7 @@ function getListOfUsersLoggedIssues(){
 
     global $link;
 
-    $sql= "SELECT Name FROM bugs";
+    $sql= "SELECT Name, Department FROM bugs";
 
     $result = mysqli_query($link,$sql);
 
