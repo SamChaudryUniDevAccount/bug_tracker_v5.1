@@ -61,7 +61,7 @@ function getIssuesLoggedWithTheirIDs(){
 
     if(count($jsonData) > 0){
 
-        echo json_encode(count($jsonData));
+        echo json_encode($jsonData);
 
 
     }else{
