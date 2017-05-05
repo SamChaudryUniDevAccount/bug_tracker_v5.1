@@ -8,6 +8,41 @@ if (isset($_POST["updateBugsTable"])) {
 
     updateBugsTable();
 
+}elseif(isset($_POST["bugId"])){
+
+    removeBugByID($_POST["bugId"]);
+
+}
+
+function removeBugByID($bugid){
+
+    global $link;
+    global $name;
+    global $department;
+    global $bugid;
+    global $priority;
+    global $problem;
+
+    $sql = "DELETE FROM bugs WHERE BugID ='$bugid'";
+
+
+    if(mysqli_query($link, $sql)){
+
+        $isSuccesful = true;
+
+        echo $isSuccesful;
+
+    } else{
+
+
+        $isSuccesful = false;
+
+        echo $isSuccesful;
+
+
+    }
+
+
 }
 
 
