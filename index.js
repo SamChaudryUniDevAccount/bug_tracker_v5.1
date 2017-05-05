@@ -12,10 +12,9 @@ $( document ).ready(function() {
 
             type:'POST',
             url:'servicespost.php',
-            data:{id:"GV123"},
+            data:{bugId:"DEV123"},
             success: function(data){
 
-                updateTableIssuesTable(data);
 
 
             }
