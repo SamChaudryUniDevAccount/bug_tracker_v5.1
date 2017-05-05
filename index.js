@@ -7,19 +7,6 @@ $( document ).ready(function() {
  showLoginModal();
 
 
-    $.ajax(
-        {
-
-            type:'POST',
-            url:'servicespost.php',
-            data:{bugId:"WH123"},
-            success: function(data){
-
-
-
-            }
-
-        });
 
 
 
