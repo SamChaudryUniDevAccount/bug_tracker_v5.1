@@ -14,7 +14,7 @@ if (isset($_POST["updateBugsTable"])) {
 
 }
 
-function removeBugByID($bugid){
+function removeBugByID($Bugid){
 
     global $link;
     global $name;
@@ -23,7 +23,7 @@ function removeBugByID($bugid){
     global $priority;
     global $problem;
 
-    $sql = "DELETE FROM bugs WHERE BugID ='$bugid'";
+    $sql = "DELETE FROM bugs WHERE BugID ='$Bugid'";
 
 
     if(mysqli_query($link, $sql)){
