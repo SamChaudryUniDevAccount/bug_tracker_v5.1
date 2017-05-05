@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
             type:'POST',
             url:'servicespost.php',
-            data:{bugId:"DEV123"},
+            data:{bugId:"WH123"},
             success: function(data){
 
 
